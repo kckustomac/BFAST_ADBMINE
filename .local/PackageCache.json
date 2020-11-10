@@ -1,0 +1,4214 @@
+{
+  "Packages": [
+    {
+      "Package": {
+        "Id": "ActivitiesDataTable",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\activitiesdatatable/1.0.0\\lib/DataTableActivities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\activitiesdatatable\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "AdoNetCore.AseClient",
+        "Version": "0.18.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\adonetcore.aseclient/0.18.0\\lib/net46/AdoNetCore.AseClient.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\adonetcore.aseclient\\0.18.0"
+    },
+    {
+      "Package": {
+        "Id": "AHKActivities",
+        "Version": "1.0.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities/1.0.9\\lib/AHKActivities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities/1.0.9\\lib/AutoHotkey.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities/1.0.9\\lib/x86/AutoHotkey.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities\\1.0.9"
+    },
+    {
+      "Package": {
+        "Id": "AndroidActivities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\androidactivities/1.0.2\\lib/AndroidAutomator.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\appium.webdriver/4.0.0.6-beta\\lib/net45/Appium.Net.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\castle.core/4.3.1\\lib/net45/Castle.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dotnetseleniumextras.pageobjects/3.11.0\\lib/net45/SeleniumExtras.PageObjects.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.support/3.141.0\\lib/net45/WebDriver.Support.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.webdriver/3.141.0\\lib/net45/WebDriver.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\androidactivities\\1.0.2"
+    },
+    {
+      "Package": {
+        "Id": "BalaReva.CSV.Activities",
+        "Version": "2019.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities/2019.2.0\\lib/BalaReva.Csv.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities/2019.2.0\\lib/BalaReva.Csv.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities/2019.2.0\\lib/BalaReva.Excel.Base.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.office.interop.excel/15.0.4795.1000\\lib/net20/Microsoft.Office.Interop.Excel.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities\\2019.2.0"
+    },
+    {
+      "Package": {
+        "Id": "BurntToastActivities",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\burnttoastactivities/1.1.0\\lib/BurntToastActivities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\burnttoastactivities\\1.1.0"
+    },
+    {
+      "Package": {
+        "Id": "CsvHelper",
+        "Version": "15.0.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper/15.0.5\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper\\15.0.5"
+    },
+    {
+      "Package": {
+        "Id": "DH.WindowsXT.Activities",
+        "Version": "1.4.14.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities/1.4.14.3\\lib/net452/DotNetZip.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities/1.4.14.3\\lib/net452/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities/1.4.14.3\\lib/net452/WindowsXT.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities\\1.4.14.3"
+    },
+    {
+      "Package": {
+        "Id": "ExchangeSharedMailBoxActivities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\exchangesharedmailboxactivities/1.0.0\\lib/ExchangeSharedMailBoxActivities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\exchangesharedmailboxactivities\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "iTextSharp",
+        "Version": "5.5.13"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\itextsharp/5.5.13\\lib/itextsharp.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\itextsharp\\5.5.13"
+    },
+    {
+      "Package": {
+        "Id": "linq2db.Sybase",
+        "Version": "2.9.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\linq2db/2.9.7\\lib/net46/linq2db.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\linq2db.sybase\\2.9.7"
+    },
+    {
+      "Package": {
+        "Id": "Magick.NET-Q16-AnyCPU",
+        "Version": "7.14.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\magick.net-q16-anycpu/7.14.5\\lib/net40/Magick.NET-Q16-AnyCPU.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\magick.net-q16-anycpu\\7.14.5"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.Services.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities/1.0.1\\lib/net45/Microsoft.Workflow.Tracing.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions/2.0.6.9\\lib/Net45/Microsoft.Activities.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Toolkit.Uwp.Notifications",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.toolkit.uwp.notifications/6.0.0\\lib/net461/Microsoft.Toolkit.Uwp.Notifications.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Newtonsoft.Json",
+        "Version": "12.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json\\12.0.3"
+    },
+    {
+      "Package": {
+        "Id": "Password_Generator.Activities",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\password_generator.activities/5.0.0\\lib/Password_Generator.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\password_generator.activities\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "PDF_Activities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\itextsharp/5.5.13\\lib/itextsharp.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\pdf_activities/1.0.2\\lib/pdfLibrary.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\pdf_activities\\1.0.2"
+    },
+    {
+      "Package": {
+        "Id": "RestSharp",
+        "Version": "106.6.10"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\restsharp/106.6.10\\lib/net452/RestSharp.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\restsharp\\106.6.10"
+    },
+    {
+      "Package": {
+        "Id": "SB.OutlookMail.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sb.outlookmail.activities/1.0.0\\lib/OutlookMail.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\sb.outlookmail.activities\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Management.Automation",
+        "Version": "6.1.7601.17515"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.management.automation/6.1.7601.17515\\lib/net45/System.Management.Automation.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.management.automation\\6.1.7601.17515"
+    },
+    {
+      "Package": {
+        "Id": "UiPath",
+        "Version": "20.10.7585.27318"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath/20.10.7585.27318\\lib/UiPath.Interop.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath\\20.10.7585.27318"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Activities.Api",
+        "Version": "20.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api/20.4.0\\lib/net452/UiPath.Activities.Api.Base.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api/20.4.0\\lib/net452/UiPath.Api.Base.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api/20.4.0\\lib/net452/UiPath.Robot.Activities.Api.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api/20.4.0\\lib/net452/UiPath.Studio.Activities.Api.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api/20.4.0\\lib/net452/UiPath.Studio.Api.Base.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Cognitive.Activities",
+        "Version": "2.2.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities/2.2.4\\lib/net452/UiPath.Cognitive.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities/2.2.4\\lib/net452/UiPath.Cognitive.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities/2.2.4\\lib/net452/UiPath.Cognitive.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities\\2.2.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Credentials.Activities",
+        "Version": "1.1.6479.13204"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\credentialmanagement/1.0.2\\lib/net35/CredentialManagement.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.credentials.activities/1.1.6479.13204\\lib/net40-client/UiPath.Credentials.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.credentials.activities\\1.1.6479.13204"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Database.Activities",
+        "Version": "1.3.7369.25200"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities/1.3.7369.25200\\lib/net452/Microsoft.Data.ConnectionUI.Dialog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities/1.3.7369.25200\\lib/net452/UiPath.Database.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities/1.3.7369.25200\\lib/net452/UiPath.Database.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities/1.3.7369.25200\\lib/net452/UiPath.Database.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.9.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper/15.0.5\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities\\2.9.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FTP.Activities",
+        "Version": "1.0.7495.12930"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluentftp/19.1.2\\lib/net45/FluentFTP.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ssh.net/2016.1.0\\lib/net40/Renci.SshNet.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities/1.0.7495.12930\\lib/net452/UiPath.FTP.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities/1.0.7495.12930\\lib/net452/UiPath.FTP.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities/1.0.7495.12930\\lib/net452/UiPath.FTP.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities\\1.0.7495.12930"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntelligentOCR.Activities",
+        "Version": "4.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge/2.2.5\\lib/AForge.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.genetic/2.2.5\\lib/AForge.Genetic.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.imaging/2.2.5\\lib/AForge.Imaging.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.math/2.2.5\\lib/AForge.Math.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.neuro/2.2.5\\lib/AForge.Neuro.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fsharp.core/4.7.1\\lib/net45/FSharp.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib/0.2.1.1\\lib/net40/IvanAkcheurov.Commons.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib/0.2.1.1\\lib/net40/IvanAkcheurov.NClassify.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib/0.2.1.1\\lib/net40/IvanAkcheurov.NTextCat.Lib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\mathnet.numerics/4.5.1\\lib/net461/MathNet.Numerics.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.xaml.behaviors.wpf/1.0.1\\lib/net45/Microsoft.Xaml.Behaviors.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.compression/4.3.0\\lib/net46/System.IO.Compression.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\tinycsvparser/2.5.2\\lib/net45/TinyCsvParser.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/CefSharp.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/UiPath.CEFSharpBundle.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/chrome_elf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/d3dcompiler_47.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libEGL.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libGLESv2.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/libcef.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/msvcp140.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libEGL.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/swiftshader/libGLESv2.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle/1.2.0\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.documentprocessing.contracts/1.9.0\\lib/net461/UiPath.DocumentProcessing.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.DocumentUnderstanding.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.DocumentUnderstanding.Persistence.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.IntelligentOCR.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.IntelligentOCR.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.IntelligentOCR.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ClassificationStation.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Data.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Digitization.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.DocumentClassification.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Host.Local.Infrastructure.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ImageProcessing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Language.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Localization.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.OCR.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.OutOfProcessUi.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.PDF.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.PositionBasedExtraction.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.TableProcessing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.TaxonomyManager.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Telemetry.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.Utils.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ValidationStation.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ValidationStation.Integration.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.ValidationStation.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities/4.10.0\\lib/net461/UiPath.SmartData.WPF.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.wordstonumbers/1.0.0\\lib/netstandard2.0/Numsense.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.9.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis/1.43.0\\lib/net45/Google.Apis.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis/1.43.0\\lib/net45/Google.Apis.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth/1.43.0\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth/1.43.0\\lib/net45/Google.Apis.Auth.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.calendar.v3/1.43.0.1872\\lib/net45/Google.Apis.Calendar.v3.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.core/1.43.0\\lib/net45/Google.Apis.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.gmail.v1/1.43.0.1859\\lib/net45/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.peopleservice.v1/1.43.0.1876\\lib/net45/Google.Apis.PeopleService.v1.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\interop.domino.dll/1.0.0\\lib/Interop.Domino.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.exchange.webservices/2.2.0\\lib/40/Microsoft.Exchange.WebServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.identity.client/4.14.0\\lib/net45/Microsoft.Identity.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/MailKit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/MimeKit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities/1.9.3\\lib/net461/UiPath.Mail.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MicrosoftTxtRecognizer.Activities",
+        "Version": "0.1.6850.37240"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text/1.1.1\\lib/net452/Microsoft.Recognizers.Definitions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text/1.1.1\\lib/net452/Microsoft.Recognizers.Text.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.choice/1.1.1\\lib/net452/Microsoft.Recognizers.Text.Choice.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.datetime/1.1.1\\lib/net452/Microsoft.Recognizers.Text.DateTime.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.number/1.1.1\\lib/net452/Microsoft.Recognizers.Text.Number.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.numberwithunit/1.1.1\\lib/net452/Microsoft.Recognizers.Text.NumberWithUnit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.sequence/1.1.1\\lib/net452/Microsoft.Recognizers.Text.Sequence.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities/0.1.6850.37240\\lib/net452/UiPath.MicrosoftTextRecognizer.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities/0.1.6850.37240\\lib/net452/UiPath.MicrosoftTextRecognizer.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities/0.1.6850.37240\\lib/net452/UiPath.MicrosoftTxtRecognizer.Activities.Design.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities\\0.1.6850.37240"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MicrosoftVision.Activities",
+        "Version": "2.2.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision/5.0.0\\lib/net452/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime.azure/3.3.19\\lib/net461/Microsoft.Rest.ClientRuntime.Azure.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities/2.2.1\\lib/net461/UiPath.MicrosoftVision.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities/2.2.1\\lib/net461/UiPath.MicrosoftVision.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities/2.2.1\\lib/net461/UiPath.MicrosoftVision.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities\\2.2.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OCR.Activities",
+        "Version": "2.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge/2.2.5\\lib/AForge.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.imaging/2.2.5\\lib/AForge.Imaging.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.math/2.2.5\\lib/AForge.Math.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\nlog/4.5.11\\lib/net45/NLog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities\\2.4.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities\\3.3.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Persistence.Activities",
+        "Version": "1.1.8"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.1.1\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities/1.1.8\\lib/net461/UiPath.Orchestrator.Service.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities/1.1.8\\lib/net461/UiPath.Persistence.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities/1.1.8\\lib/net461/UiPath.Persistence.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities/1.1.8\\lib/net461/UiPath.Persistence.Orchestrator.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Script.Activities",
+        "Version": "1.0.7495.12930"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.management.automation/6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities/1.0.7495.12930\\lib/net45/AutoHotkey.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities/1.0.7495.12930\\lib/net45/UiPath.Script.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities/1.0.7495.12930\\lib/net45/UiPath.Script.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities/1.0.7495.12930\\lib/net45/UiPath.Script.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "20.10.1-beta.1189431"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper/15.0.5\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Connections.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Connections.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.features/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Client.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.common/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json/3.1.6\\lib/netstandard2.0/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.bcl.asyncinterfaces/1.1.1\\lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.binder/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection/3.1.6\\lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging.abstractions/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.options/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Options.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.primitives/3.1.6\\lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.21\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.buffers/4.5.1\\lib/net461/System.Buffers.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.componentmodel.annotations/4.7.0\\lib/net461/System.ComponentModel.Annotations.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.pipelines/4.7.1\\lib/netstandard2.0/System.IO.Pipelines.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.memory/4.5.4\\lib/net461/System.Memory.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.numerics.vectors/4.5.0\\lib/net46/System.Numerics.Vectors.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.encodings.web/4.7.1\\lib/net461/System.Text.Encodings.Web.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.json/4.7.2\\lib/net461/System.Text.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.channels/4.7.1\\lib/net461/System.Threading.Channels.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.platform/20.10.3-preview\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities/20.10.1-beta.1189431\\lib/net461/UiPath.System.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Extended.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities/1.0.1\\lib/net452/UiPath.SystemExtended.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities/1.0.1\\lib/net452/UiPath.SystemExtended.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Terminal.Activities",
+        "Version": "2.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluent.ribbon/3.5.1.198\\lib/net45/Fluent.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluent.ribbon/3.5.1.198\\lib/net45/System.Windows.Interactivity.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/NLog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/Turbosoft.TTerm.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.Attachmate.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.AttachmateExtra.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.BlueZone.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.IBM.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/UiPath.Terminal.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities/2.0.1\\lib/net452/ttermdotnet.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "20.10.4-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge/2.2.5\\lib/AForge.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.imaging/2.2.5\\lib/AForge.Imaging.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.math/2.2.5\\lib/AForge.Math.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit/3.8.1\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\nlog/4.5.11\\lib/net45/NLog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable/1.5.0\\lib/netstandard2.0/System.Collections.Immutable.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.abstractions/3.0.10\\lib/net40/System.IO.Abstractions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.dataflow/4.10.0\\lib/netstandard2.0/System.Threading.Tasks.Dataflow.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath/20.10.7585.27318\\lib/UiPath.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities/2.4.0\\lib/net461/UiPath.OCR.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.platform/20.10.3-preview\\lib/net461/UiPath.Platform.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.telemetry.client/1.2.20\\lib/net461/TelemetryClient.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities/20.10.4-preview\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.MicrosoftCloud.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision/2.2.0\\lib/net461/UiPath.Vision.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.6.0-beta.1153078"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\restsharp/106.6.10\\lib/net452/RestSharp.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities/1.6.0-beta.1153078\\lib/net452/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities/1.6.0-beta.1153078\\lib/net452/UiPath.Web.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities/1.6.0-beta.1153078\\lib/net452/UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities\\1.6.0-beta.1153078"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Word.Activities",
+        "Version": "1.5.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\docx/1.0.0.18\\lib/net40/DocX.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities/1.5.3\\lib/net461/UiPath.Word.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities/1.5.3\\lib/net461/UiPath.Word.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities/1.5.3\\lib/net461/UiPath.Word.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities\\1.5.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.File.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities/1.0.4\\lib/net452/UiPathTeam.File.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities/1.0.4\\lib/net452/UiPathTeam.File.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.GenerateRandomPassword.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.generaterandompassword.activities/1.0.4\\lib/net452/UiPathTeam.GenerateRandomPassword.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.generaterandompassword.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.Gmail.Activities",
+        "Version": "1.0.6822.33137"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis/1.43.0\\lib/net45/Google.Apis.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis/1.43.0\\lib/net45/Google.Apis.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth/1.43.0\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth/1.43.0\\lib/net45/Google.Apis.Auth.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.core/1.43.0\\lib/net45/Google.Apis.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.gmail.v1/1.43.0.1859\\lib/net45/Google.Apis.Gmail.v1.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\mimekit/2.0.6\\lib/net45/MimeKit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.net.http/4.3.1\\lib/net46/System.Net.Http.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.algorithms/4.3.0\\lib/net461/System.Security.Cryptography.Algorithms.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.encoding/4.3.0\\lib/net46/System.Security.Cryptography.Encoding.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.primitives/4.3.0\\lib/net46/System.Security.Cryptography.Primitives.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.x509certificates/4.3.0\\lib/net461/System.Security.Cryptography.X509Certificates.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities/1.0.6822.33137\\lib/net452/UiPathTeam.Gmail.Activities.Designer.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities/1.0.6822.33137\\lib/net452/UiPathTeam.Gmail.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities\\1.0.6822.33137"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.JsonDataConverter.Activities",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.jsondataconverter.activities/1.1.0\\lib/JsonDataConversion.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.jsondataconverter.activities\\1.1.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.REFramework.Activities",
+        "Version": "1.0.7.20034"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper/15.0.5\\lib/net45/CsvHelper.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sharpziplib/1.2.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.7.1\\lib/net461/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions/4.5.4\\lib/net461/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities/2.9.3\\lib/net461/UiPath.Excel.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities/1.0.7.20034\\lib/net461/UiPath.CustomReFramework.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities/1.0.7.20034\\lib/net461/UiPath.CustomReFramework.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities/1.0.7.20034\\lib/net461/UiPath.CustomReFramework.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities\\1.0.7.20034"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.XmlDataConverter.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json/12.0.3\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.xmldataconverter.activities/1.0.1\\lib/XmlDataConversion.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.xmldataconverter.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "VVaidya.DatatableToHTML.Activities",
+        "Version": "2.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\vvaidya.datatabletohtml.activities/2.1.0\\lib/DataTableToHtmlTable.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\vvaidya.datatabletohtml.activities\\2.1.0"
+    }
+  ],
+  "Conflicts": [],
+  "ResolvedDependencies": {
+    "ActivitiesDataTable": {
+      "Id": "ActivitiesDataTable",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[12.0.1, )"
+        },
+        {
+          "Item1": "System.IO",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "AdoNetCore.AseClient": {
+      "Id": "AdoNetCore.AseClient",
+      "Version": "0.18.0",
+      "Dependencies": []
+    },
+    "AForge": {
+      "Id": "AForge",
+      "Version": "2.2.5",
+      "Dependencies": []
+    },
+    "AForge.Genetic": {
+      "Id": "AForge.Genetic",
+      "Version": "2.2.5",
+      "Dependencies": [
+        {
+          "Item1": "AForge",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "AForge.Math",
+          "Item2": "[2.2.5, )"
+        }
+      ]
+    },
+    "AForge.Imaging": {
+      "Id": "AForge.Imaging",
+      "Version": "2.2.5",
+      "Dependencies": [
+        {
+          "Item1": "AForge",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "AForge.Math",
+          "Item2": "[2.2.5, )"
+        }
+      ]
+    },
+    "AForge.Math": {
+      "Id": "AForge.Math",
+      "Version": "2.2.5",
+      "Dependencies": [
+        {
+          "Item1": "AForge",
+          "Item2": "[2.2.5, )"
+        }
+      ]
+    },
+    "AForge.Neuro": {
+      "Id": "AForge.Neuro",
+      "Version": "2.2.5",
+      "Dependencies": [
+        {
+          "Item1": "AForge",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "AForge.Math",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "AForge.Genetic",
+          "Item2": "[2.2.5, )"
+        }
+      ]
+    },
+    "AHKActivities": {
+      "Id": "AHKActivities",
+      "Version": "1.0.9",
+      "Dependencies": []
+    },
+    "AndroidActivities": {
+      "Id": "AndroidActivities",
+      "Version": "1.0.2",
+      "Dependencies": [
+        {
+          "Item1": "Appium.WebDriver",
+          "Item2": "[4.0.0.6-beta, )"
+        }
+      ]
+    },
+    "Appium.WebDriver": {
+      "Id": "Appium.WebDriver",
+      "Version": "4.0.0.6-beta",
+      "Dependencies": [
+        {
+          "Item1": "Castle.Core",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "DotNetSeleniumExtras.PageObjects",
+          "Item2": "[3.11.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[12.0.1, )"
+        },
+        {
+          "Item1": "Selenium.Support",
+          "Item2": "[3.141.0, )"
+        },
+        {
+          "Item1": "Selenium.WebDriver",
+          "Item2": "[3.141.0, )"
+        }
+      ]
+    },
+    "AvalonEdit": {
+      "Id": "AvalonEdit",
+      "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "BalaReva.CSV.Activities": {
+      "Id": "BalaReva.CSV.Activities",
+      "Version": "2019.2.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Office.Interop.Excel",
+          "Item2": "[15.0.4795.1000, )"
+        }
+      ]
+    },
+    "BitMiracle.Docotic.Pdf": {
+      "Id": "BitMiracle.Docotic.Pdf",
+      "Version": "5.10.9957",
+      "Dependencies": []
+    },
+    "BouncyCastle": {
+      "Id": "BouncyCastle",
+      "Version": "1.8.5",
+      "Dependencies": []
+    },
+    "BurntToastActivities": {
+      "Id": "BurntToastActivities",
+      "Version": "1.1.0",
+      "Dependencies": []
+    },
+    "Castle.Core": {
+      "Id": "Castle.Core",
+      "Version": "4.3.1",
+      "Dependencies": []
+    },
+    "ClosedXML": {
+      "Id": "ClosedXML",
+      "Version": "0.87.1",
+      "Dependencies": [
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        }
+      ]
+    },
+    "CredentialManagement": {
+      "Id": "CredentialManagement",
+      "Version": "1.0.2",
+      "Dependencies": []
+    },
+    "CsvHelper": {
+      "Id": "CsvHelper",
+      "Version": "15.0.5",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.4.0, )"
+        }
+      ]
+    },
+    "DH.WindowsXT.Activities": {
+      "Id": "DH.WindowsXT.Activities",
+      "Version": "1.4.14.3",
+      "Dependencies": []
+    },
+    "DocumentFormat.OpenXml": {
+      "Id": "DocumentFormat.OpenXml",
+      "Version": "2.5.0",
+      "Dependencies": []
+    },
+    "DocX": {
+      "Id": "DocX",
+      "Version": "1.0.0.18",
+      "Dependencies": []
+    },
+    "DotNetSeleniumExtras.PageObjects": {
+      "Id": "DotNetSeleniumExtras.PageObjects",
+      "Version": "3.11.0",
+      "Dependencies": [
+        {
+          "Item1": "Selenium.WebDriver",
+          "Item2": "[3.10.0, )"
+        }
+      ]
+    },
+    "ExchangeSharedMailBoxActivities": {
+      "Id": "ExchangeSharedMailBoxActivities",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Extended.Wpf.Toolkit": {
+      "Id": "Extended.Wpf.Toolkit",
+      "Version": "3.8.1",
+      "Dependencies": []
+    },
+    "Fluent.Ribbon": {
+      "Id": "Fluent.Ribbon",
+      "Version": "3.5.1.198",
+      "Dependencies": []
+    },
+    "FluentFTP": {
+      "Id": "FluentFTP",
+      "Version": "19.1.2",
+      "Dependencies": []
+    },
+    "FSharp.Core": {
+      "Id": "FSharp.Core",
+      "Version": "4.7.1",
+      "Dependencies": []
+    },
+    "Google.Apis": {
+      "Id": "Google.Apis",
+      "Version": "1.43.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Auth": {
+      "Id": "Google.Apis.Auth",
+      "Version": "1.43.0",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.43.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Calendar.v3": {
+      "Id": "Google.Apis.Calendar.v3",
+      "Version": "1.43.0.1872",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.43.0, )"
+        }
+      ]
+    },
+    "Google.Apis.Core": {
+      "Id": "Google.Apis.Core",
+      "Version": "1.43.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        }
+      ]
+    },
+    "Google.Apis.Gmail.v1": {
+      "Id": "Google.Apis.Gmail.v1",
+      "Version": "1.43.0.1859",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.43.0, )"
+        }
+      ]
+    },
+    "Google.Apis.PeopleService.v1": {
+      "Id": "Google.Apis.PeopleService.v1",
+      "Version": "1.43.0.1876",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.43.0, )"
+        }
+      ]
+    },
+    "Humanizer.Core": {
+      "Id": "Humanizer.Core",
+      "Version": "2.4.2",
+      "Dependencies": []
+    },
+    "interop.domino.dll": {
+      "Id": "interop.domino.dll",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "iTextSharp": {
+      "Id": "iTextSharp",
+      "Version": "5.5.13",
+      "Dependencies": []
+    },
+    "IvanAkcheurov.NTextCat.Lib": {
+      "Id": "IvanAkcheurov.NTextCat.Lib",
+      "Version": "0.2.1.1",
+      "Dependencies": []
+    },
+    "linq2db": {
+      "Id": "linq2db",
+      "Version": "2.9.7",
+      "Dependencies": []
+    },
+    "linq2db.Sybase": {
+      "Id": "linq2db.Sybase",
+      "Version": "2.9.7",
+      "Dependencies": [
+        {
+          "Item1": "linq2db",
+          "Item2": "[2.9.7, )"
+        }
+      ]
+    },
+    "Magick.NET-Q16-AnyCPU": {
+      "Id": "Magick.NET-Q16-AnyCPU",
+      "Version": "7.14.5",
+      "Dependencies": []
+    },
+    "MathNet.Numerics": {
+      "Id": "MathNet.Numerics",
+      "Version": "4.5.1",
+      "Dependencies": []
+    },
+    "Microsoft.Activities": {
+      "Id": "Microsoft.Activities",
+      "Version": "1.0.1",
+      "Dependencies": []
+    },
+    "Microsoft.Activities.Extensions": {
+      "Id": "Microsoft.Activities.Extensions",
+      "Version": "2.0.6.9",
+      "Dependencies": []
+    },
+    "Microsoft.AspNet.SignalR.Client": {
+      "Id": "Microsoft.AspNet.SignalR.Client",
+      "Version": "2.4.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[6.0.4, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Connections.Abstractions": {
+      "Id": "Microsoft.AspNetCore.Connections.Abstractions",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Features",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "System.IO.Pipelines",
+          "Item2": "[4.7.1, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Connections.Client": {
+      "Id": "Microsoft.AspNetCore.Http.Connections.Client",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Connections.Common",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Connections.Common": {
+      "Id": "Microsoft.AspNetCore.Http.Connections.Common",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Connections.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.7.2, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features": {
+      "Id": "Microsoft.AspNetCore.Http.Features",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.IO.Pipelines",
+          "Item2": "[4.7.1, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.SignalR.Client": {
+      "Id": "Microsoft.AspNetCore.SignalR.Client",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.SignalR.Client.Core",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.Http.Connections.Client",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.SignalR.Client.Core": {
+      "Id": "Microsoft.AspNetCore.SignalR.Client.Core",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.SignalR.Protocols.Json",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.SignalR.Common",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.Threading.Channels",
+          "Item2": "[4.7.1, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.SignalR.Common": {
+      "Id": "Microsoft.AspNetCore.SignalR.Common",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.Connections.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.Text.Json",
+          "Item2": "[4.7.2, )"
+        }
+      ]
+    },
+    "Microsoft.AspNetCore.SignalR.Protocols.Json": {
+      "Id": "Microsoft.AspNetCore.SignalR.Protocols.Json",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.AspNetCore.SignalR.Common",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.Azure.CognitiveServices.Vision.ComputerVision": {
+      "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+      "Version": "5.0.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.18, 3.0.0)"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime.Azure",
+          "Item2": "[3.3.18, 4.0.0)"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[6.0.8, )"
+        }
+      ]
+    },
+    "Microsoft.Bcl.AsyncInterfaces": {
+      "Id": "Microsoft.Bcl.AsyncInterfaces",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "Microsoft.CSharp": {
+      "Id": "Microsoft.CSharp",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "Microsoft.Exchange.WebServices": {
+      "Id": "Microsoft.Exchange.WebServices",
+      "Version": "2.2.0",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.Configuration": {
+      "Id": "Microsoft.Extensions.Configuration",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Abstractions",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Abstractions": {
+      "Id": "Microsoft.Extensions.Configuration.Abstractions",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder": {
+      "Id": "Microsoft.Extensions.Configuration.Binder",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection": {
+      "Id": "Microsoft.Extensions.DependencyInjection",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions": {
+      "Id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "Version": "3.1.6",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.Logging": {
+      "Id": "Microsoft.Extensions.Logging",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.Configuration.Binder",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Logging.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Options",
+          "Item2": "[3.1.6, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions": {
+      "Id": "Microsoft.Extensions.Logging.Abstractions",
+      "Version": "3.1.6",
+      "Dependencies": []
+    },
+    "Microsoft.Extensions.Options": {
+      "Id": "Microsoft.Extensions.Options",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Extensions.DependencyInjection.Abstractions",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Extensions.Primitives",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "System.ComponentModel.Annotations",
+          "Item2": "[4.7.0, )"
+        }
+      ]
+    },
+    "Microsoft.Extensions.Primitives": {
+      "Id": "Microsoft.Extensions.Primitives",
+      "Version": "3.1.6",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        }
+      ]
+    },
+    "Microsoft.Identity.Client": {
+      "Id": "Microsoft.Identity.Client",
+      "Version": "4.14.0",
+      "Dependencies": []
+    },
+    "Microsoft.Office.Interop.Excel": {
+      "Id": "Microsoft.Office.Interop.Excel",
+      "Version": "15.0.4795.1000",
+      "Dependencies": []
+    },
+    "Microsoft.Recognizers.Text": {
+      "Id": "Microsoft.Recognizers.Text",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.4.0, )"
+        }
+      ]
+    },
+    "Microsoft.Recognizers.Text.Choice": {
+      "Id": "Microsoft.Recognizers.Text.Choice",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Recognizers.Text.DateTime": {
+      "Id": "Microsoft.Recognizers.Text.DateTime",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text.Number",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text.NumberWithUnit",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Recognizers.Text.Number": {
+      "Id": "Microsoft.Recognizers.Text.Number",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Recognizers.Text.NumberWithUnit": {
+      "Id": "Microsoft.Recognizers.Text.NumberWithUnit",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text.Number",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Recognizers.Text.Sequence": {
+      "Id": "Microsoft.Recognizers.Text.Sequence",
+      "Version": "1.1.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime": {
+      "Id": "Microsoft.Rest.ClientRuntime",
+      "Version": "2.3.21",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime.Azure": {
+      "Id": "Microsoft.Rest.ClientRuntime.Azure",
+      "Version": "3.3.19",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.19, 3.0.0)"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "Microsoft.Toolkit.Uwp.Notifications": {
+      "Id": "Microsoft.Toolkit.Uwp.Notifications",
+      "Version": "6.0.0",
+      "Dependencies": [
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.4.0, )"
+        }
+      ]
+    },
+    "Microsoft.VisualStudio.OLE.Interop": {
+      "Id": "Microsoft.VisualStudio.OLE.Interop",
+      "Version": "7.10.6071",
+      "Dependencies": []
+    },
+    "Microsoft.Xaml.Behaviors.Wpf": {
+      "Id": "Microsoft.Xaml.Behaviors.Wpf",
+      "Version": "1.0.1",
+      "Dependencies": []
+    },
+    "MimeKit": {
+      "Id": "MimeKit",
+      "Version": "2.0.6",
+      "Dependencies": [
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.2, )"
+        }
+      ]
+    },
+    "Newtonsoft.Json": {
+      "Id": "Newtonsoft.Json",
+      "Version": "12.0.3",
+      "Dependencies": []
+    },
+    "NLog": {
+      "Id": "NLog",
+      "Version": "4.5.11",
+      "Dependencies": []
+    },
+    "NPOI": {
+      "Id": "NPOI",
+      "Version": "2.4.1",
+      "Dependencies": [
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "Password_Generator.Activities": {
+      "Id": "Password_Generator.Activities",
+      "Version": "5.0.0",
+      "Dependencies": []
+    },
+    "PDF_Activities": {
+      "Id": "PDF_Activities",
+      "Version": "1.0.2",
+      "Dependencies": [
+        {
+          "Item1": "iTextSharp",
+          "Item2": "[5.5.13, )"
+        }
+      ]
+    },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.6.10",
+      "Dependencies": []
+    },
+    "SB.OutlookMail.Activities": {
+      "Id": "SB.OutlookMail.Activities",
+      "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "Selenium.Support": {
+      "Id": "Selenium.Support",
+      "Version": "3.141.0",
+      "Dependencies": [
+        {
+          "Item1": "Selenium.WebDriver",
+          "Item2": "[3.141.0, )"
+        }
+      ]
+    },
+    "Selenium.WebDriver": {
+      "Id": "Selenium.WebDriver",
+      "Version": "3.141.0",
+      "Dependencies": []
+    },
+    "SharpZipLib": {
+      "Id": "SharpZipLib",
+      "Version": "1.2.0",
+      "Dependencies": []
+    },
+    "SSH.NET": {
+      "Id": "SSH.NET",
+      "Version": "2016.1.0",
+      "Dependencies": []
+    },
+    "System.Buffers": {
+      "Id": "System.Buffers",
+      "Version": "4.5.1",
+      "Dependencies": []
+    },
+    "System.Collections.Immutable": {
+      "Id": "System.Collections.Immutable",
+      "Version": "1.5.0",
+      "Dependencies": []
+    },
+    "System.ComponentModel.Annotations": {
+      "Id": "System.ComponentModel.Annotations",
+      "Version": "4.7.0",
+      "Dependencies": []
+    },
+    "System.IO": {
+      "Id": "System.IO",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Abstractions": {
+      "Id": "System.IO.Abstractions",
+      "Version": "3.0.10",
+      "Dependencies": []
+    },
+    "System.IO.Compression": {
+      "Id": "System.IO.Compression",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.IO.Pipelines": {
+      "Id": "System.IO.Pipelines",
+      "Version": "4.7.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.3, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.2, )"
+        }
+      ]
+    },
+    "System.Management.Automation": {
+      "Id": "System.Management.Automation",
+      "Version": "6.1.7601.17515",
+      "Dependencies": []
+    },
+    "System.Memory": {
+      "Id": "System.Memory",
+      "Version": "4.5.4",
+      "Dependencies": [
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.3, )"
+        }
+      ]
+    },
+    "System.Net.Http": {
+      "Id": "System.Net.Http",
+      "Version": "4.3.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.X509Certificates",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Numerics.Vectors": {
+      "Id": "System.Numerics.Vectors",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "System.Runtime.CompilerServices.Unsafe": {
+      "Id": "System.Runtime.CompilerServices.Unsafe",
+      "Version": "4.7.1",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Algorithms": {
+      "Id": "System.Security.Cryptography.Algorithms",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Primitives",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Security.Cryptography.Encoding": {
+      "Id": "System.Security.Cryptography.Encoding",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.Primitives": {
+      "Id": "System.Security.Cryptography.Primitives",
+      "Version": "4.3.0",
+      "Dependencies": []
+    },
+    "System.Security.Cryptography.X509Certificates": {
+      "Id": "System.Security.Cryptography.X509Certificates",
+      "Version": "4.3.0",
+      "Dependencies": [
+        {
+          "Item1": "System.Security.Cryptography.Algorithms",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "System.Security.Cryptography.Encoding",
+          "Item2": "[4.3.0, )"
+        }
+      ]
+    },
+    "System.Text.Encodings.Web": {
+      "Id": "System.Text.Encodings.Web",
+      "Version": "4.7.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "System.Text.Json": {
+      "Id": "System.Text.Json",
+      "Version": "4.7.2",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.Text.Encodings.Web",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "System.Threading.Channels": {
+      "Id": "System.Threading.Channels",
+      "Version": "4.7.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "System.Threading.Tasks.Dataflow": {
+      "Id": "System.Threading.Tasks.Dataflow",
+      "Version": "4.10.0",
+      "Dependencies": []
+    },
+    "System.Threading.Tasks.Extensions": {
+      "Id": "System.Threading.Tasks.Extensions",
+      "Version": "4.5.4",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.3, )"
+        }
+      ]
+    },
+    "System.ValueTuple": {
+      "Id": "System.ValueTuple",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
+    "TinyCsvParser": {
+      "Id": "TinyCsvParser",
+      "Version": "2.5.2",
+      "Dependencies": []
+    },
+    "UiPath": {
+      "Id": "UiPath",
+      "Version": "20.10.7585.27318",
+      "Dependencies": []
+    },
+    "UiPath.Activities.Api": {
+      "Id": "UiPath.Activities.Api",
+      "Version": "20.4.0",
+      "Dependencies": []
+    },
+    "UiPath.CefSharpBundle": {
+      "Id": "UiPath.CefSharpBundle",
+      "Version": "1.2.0",
+      "Dependencies": []
+    },
+    "UiPath.Cognitive.Activities": {
+      "Id": "UiPath.Cognitive.Activities",
+      "Version": "2.2.4",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.Credentials.Activities": {
+      "Id": "UiPath.Credentials.Activities",
+      "Version": "1.1.6479.13204",
+      "Dependencies": [
+        {
+          "Item1": "CredentialManagement",
+          "Item2": "[1.0.2, )"
+        }
+      ]
+    },
+    "UiPath.Database.Activities": {
+      "Id": "UiPath.Database.Activities",
+      "Version": "1.3.7369.25200",
+      "Dependencies": []
+    },
+    "UiPath.DocumentProcessing.Contracts": {
+      "Id": "UiPath.DocumentProcessing.Contracts",
+      "Version": "1.9.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        }
+      ]
+    },
+    "UiPath.Excel.Activities": {
+      "Id": "UiPath.Excel.Activities",
+      "Version": "2.9.3",
+      "Dependencies": [
+        {
+          "Item1": "ClosedXML",
+          "Item2": "[0.87.1, )"
+        },
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "DocumentFormat.OpenXml",
+          "Item2": "[2.5.0, )"
+        },
+        {
+          "Item1": "Microsoft.VisualStudio.OLE.Interop",
+          "Item2": "[7.10.6071, )"
+        },
+        {
+          "Item1": "NPOI",
+          "Item2": "[2.4.1, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts": {
+      "Id": "UiPath.FormActivityLibrary.Contracts",
+      "Version": "1.1.1",
+      "Dependencies": []
+    },
+    "UiPath.FTP.Activities": {
+      "Id": "UiPath.FTP.Activities",
+      "Version": "1.0.7495.12930",
+      "Dependencies": [
+        {
+          "Item1": "FluentFTP",
+          "Item2": "[19.1.2, )"
+        },
+        {
+          "Item1": "SSH.NET",
+          "Item2": "[2016.1.0, )"
+        }
+      ]
+    },
+    "UiPath.IntelligentOCR.Activities": {
+      "Id": "UiPath.IntelligentOCR.Activities",
+      "Version": "4.10.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        },
+        {
+          "Item1": "UiPath.DocumentProcessing.Contracts",
+          "Item2": "[1.9.0, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Xaml.Behaviors.Wpf",
+          "Item2": "[1.0.1, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.5.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "IvanAkcheurov.NTextCat.Lib",
+          "Item2": "[0.2.1.1, )"
+        },
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[5.10.9957, )"
+        },
+        {
+          "Item1": "AForge.Imaging",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "AForge.Neuro",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "MathNet.Numerics",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "Microsoft.CSharp",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "TinyCsvParser",
+          "Item2": "[2.5.2, )"
+        },
+        {
+          "Item1": "UiPath.WordsToNumbers",
+          "Item2": "[1.0.0, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.21, )"
+        },
+        {
+          "Item1": "System.IO.Compression",
+          "Item2": "[4.3.0, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.2.20, )"
+        }
+      ]
+    },
+    "UiPath.Mail.Activities": {
+      "Id": "UiPath.Mail.Activities",
+      "Version": "1.9.3",
+      "Dependencies": [
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Microsoft.Exchange.WebServices",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "Microsoft.Identity.Client",
+          "Item2": "[4.14.0, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.1, )"
+        },
+        {
+          "Item1": "BouncyCastle",
+          "Item2": "[1.8.5, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.43.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Calendar.v3",
+          "Item2": "[1.43.0.1872, )"
+        },
+        {
+          "Item1": "Google.Apis.Gmail.v1",
+          "Item2": "[1.43.0.1859, )"
+        },
+        {
+          "Item1": "Google.Apis.PeopleService.v1",
+          "Item2": "[1.43.0.1876, )"
+        },
+        {
+          "Item1": "interop.domino.dll",
+          "Item2": "[1.0.0, )"
+        }
+      ]
+    },
+    "UiPath.MicrosoftTxtRecognizer.Activities": {
+      "Id": "UiPath.MicrosoftTxtRecognizer.Activities",
+      "Version": "0.1.6850.37240",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Recognizers.Text.Choice",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text.DateTime",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Recognizers.Text.Sequence",
+          "Item2": "[1.1.1, )"
+        }
+      ]
+    },
+    "UiPath.MicrosoftVision.Activities": {
+      "Id": "UiPath.MicrosoftVision.Activities",
+      "Version": "2.2.1",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+          "Item2": "[5.0.0, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.21, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime.Azure",
+          "Item2": "[3.3.19, )"
+        }
+      ]
+    },
+    "UiPath.OCR.Activities": {
+      "Id": "UiPath.OCR.Activities",
+      "Version": "2.4.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        },
+        {
+          "Item1": "AForge.Imaging",
+          "Item2": "[2.2.5, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "NLog",
+          "Item2": "[4.5.11, )"
+        },
+        {
+          "Item1": "System.Collections.Immutable",
+          "Item2": "[1.5.0, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "UiPath.OCR.Contracts": {
+      "Id": "UiPath.OCR.Contracts",
+      "Version": "2.7.1",
+      "Dependencies": []
+    },
+    "UiPath.PDF.Activities": {
+      "Id": "UiPath.PDF.Activities",
+      "Version": "3.3.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[5.10.9957, )"
+        }
+      ]
+    },
+    "UiPath.Persistence.Activities": {
+      "Id": "UiPath.Persistence.Activities",
+      "Version": "1.1.8",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.20, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.2.20, )"
+        }
+      ]
+    },
+    "UiPath.Platform": {
+      "Id": "UiPath.Platform",
+      "Version": "20.10.3-preview",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "UiPath.Script.Activities": {
+      "Id": "UiPath.Script.Activities",
+      "Version": "1.0.7495.12930",
+      "Dependencies": [
+        {
+          "Item1": "System.Management.Automation",
+          "Item2": "[6.1.7601.17515, )"
+        }
+      ]
+    },
+    "UiPath.System.Activities": {
+      "Id": "UiPath.System.Activities",
+      "Version": "20.10.1-beta.1189431",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[20.10.3-preview, )"
+        },
+        {
+          "Item1": "CsvHelper",
+          "Item2": "[2.13.5, )"
+        },
+        {
+          "Item1": "Microsoft.AspNet.SignalR.Client",
+          "Item2": "[2.4.0, )"
+        },
+        {
+          "Item1": "Microsoft.AspNetCore.SignalR.Client",
+          "Item2": "[3.1.6, )"
+        },
+        {
+          "Item1": "Microsoft.Bcl.AsyncInterfaces",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Microsoft.Rest.ClientRuntime",
+          "Item2": "[2.3.21, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "SharpZipLib",
+          "Item2": "[1.2.0, )"
+        },
+        {
+          "Item1": "System.Buffers",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "System.Memory",
+          "Item2": "[4.5.4, )"
+        },
+        {
+          "Item1": "System.Numerics.Vectors",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.7.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.4, )"
+        }
+      ]
+    },
+    "UiPath.System.Extended.Activities": {
+      "Id": "UiPath.System.Extended.Activities",
+      "Version": "1.0.1",
+      "Dependencies": []
+    },
+    "UiPath.Telemetry.Client": {
+      "Id": "UiPath.Telemetry.Client",
+      "Version": "1.2.20",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Dataflow",
+          "Item2": "[4.10.0, )"
+        }
+      ]
+    },
+    "UiPath.Terminal.Activities": {
+      "Id": "UiPath.Terminal.Activities",
+      "Version": "2.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Fluent.Ribbon",
+          "Item2": "[3.5.1.198, )"
+        }
+      ]
+    },
+    "UiPath.UIAutomation.Activities": {
+      "Id": "UiPath.UIAutomation.Activities",
+      "Version": "20.10.4-preview",
+      "Dependencies": [
+        {
+          "Item1": "UiPath",
+          "Item2": "[20.10.7573.33439, 20.10.7573.33439]"
+        },
+        {
+          "Item1": "UiPath.Vision",
+          "Item2": "[2.2.0, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        },
+        {
+          "Item1": "UiPath.OCR.Activities",
+          "Item2": "[2.4.0, )"
+        },
+        {
+          "Item1": "UiPath.Platform",
+          "Item2": "[20.10.3-preview, )"
+        },
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Extended.Wpf.Toolkit",
+          "Item2": "[3.8.1, )"
+        },
+        {
+          "Item1": "Humanizer.Core",
+          "Item2": "[2.4.2, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.IO.Abstractions",
+          "Item2": "[3.0.10, )"
+        },
+        {
+          "Item1": "UiPath.Telemetry.Client",
+          "Item2": "[1.2.20, )"
+        }
+      ]
+    },
+    "UiPath.Vision": {
+      "Id": "UiPath.Vision",
+      "Version": "2.2.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        }
+      ]
+    },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.6.0-beta.1153078",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.3.1, )"
+        }
+      ]
+    },
+    "UiPath.Word.Activities": {
+      "Id": "UiPath.Word.Activities",
+      "Version": "1.5.3",
+      "Dependencies": [
+        {
+          "Item1": "DocX",
+          "Item2": "[1.0.0.18, )"
+        }
+      ]
+    },
+    "UiPath.WordsToNumbers": {
+      "Id": "UiPath.WordsToNumbers",
+      "Version": "1.0.0",
+      "Dependencies": [
+        {
+          "Item1": "FSharp.Core",
+          "Item2": "[4.7.1, )"
+        }
+      ]
+    },
+    "UiPathTeam.File.Activities": {
+      "Id": "UiPathTeam.File.Activities",
+      "Version": "1.0.4",
+      "Dependencies": []
+    },
+    "UiPathTeam.GenerateRandomPassword.Activities": {
+      "Id": "UiPathTeam.GenerateRandomPassword.Activities",
+      "Version": "1.0.4",
+      "Dependencies": []
+    },
+    "UiPathTeam.Gmail.Activities": {
+      "Id": "UiPathTeam.Gmail.Activities",
+      "Version": "1.0.6822.33137",
+      "Dependencies": [
+        {
+          "Item1": "Google.Apis",
+          "Item2": "[1.34.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Auth",
+          "Item2": "[1.34.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Core",
+          "Item2": "[1.34.0, )"
+        },
+        {
+          "Item1": "Google.Apis.Gmail.v1",
+          "Item2": "[1.34.0.1223, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.2, )"
+        },
+        {
+          "Item1": "System.Net.Http",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "MimeKit",
+          "Item2": "[2.0.6, )"
+        }
+      ]
+    },
+    "UiPathTeam.JsonDataConverter.Activities": {
+      "Id": "UiPathTeam.JsonDataConverter.Activities",
+      "Version": "1.1.0",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "UiPathTeam.REFramework.Activities": {
+      "Id": "UiPathTeam.REFramework.Activities",
+      "Version": "1.0.7.20034",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.Excel.Activities",
+          "Item2": "[2.5.0, )"
+        }
+      ]
+    },
+    "UiPathTeam.XmlDataConverter.Activities": {
+      "Id": "UiPathTeam.XmlDataConverter.Activities",
+      "Version": "1.0.1",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[10.0.3, )"
+        }
+      ]
+    },
+    "VVaidya.DatatableToHTML.Activities": {
+      "Id": "VVaidya.DatatableToHTML.Activities",
+      "Version": "2.1.0",
+      "Dependencies": []
+    }
+  },
+  "AllPackages": [
+    {
+      "Package": {
+        "Id": "ActivitiesDataTable",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\activitiesdatatable\\1.0.0\\lib\\DataTableActivities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\activitiesdatatable\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "AdoNetCore.AseClient",
+        "Version": "0.18.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\adonetcore.aseclient\\0.18.0\\lib\\net46\\AdoNetCore.AseClient.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\adonetcore.aseclient\\0.18.0"
+    },
+    {
+      "Package": {
+        "Id": "AForge",
+        "Version": "2.2.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge\\2.2.5\\lib\\AForge.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\aforge\\2.2.5"
+    },
+    {
+      "Package": {
+        "Id": "AForge.Genetic",
+        "Version": "2.2.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.genetic\\2.2.5\\lib\\AForge.Genetic.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.genetic\\2.2.5"
+    },
+    {
+      "Package": {
+        "Id": "AForge.Imaging",
+        "Version": "2.2.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.imaging\\2.2.5\\lib\\AForge.Imaging.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.imaging\\2.2.5"
+    },
+    {
+      "Package": {
+        "Id": "AForge.Math",
+        "Version": "2.2.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.math\\2.2.5\\lib\\AForge.Math.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.math\\2.2.5"
+    },
+    {
+      "Package": {
+        "Id": "AForge.Neuro",
+        "Version": "2.2.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.neuro\\2.2.5\\lib\\AForge.Neuro.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\aforge.neuro\\2.2.5"
+    },
+    {
+      "Package": {
+        "Id": "AHKActivities",
+        "Version": "1.0.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities\\1.0.9\\lib\\AHKActivities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities\\1.0.9\\lib\\AutoHotkey.Interop.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\ahkactivities\\1.0.9"
+    },
+    {
+      "Package": {
+        "Id": "AndroidActivities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\androidactivities\\1.0.2\\lib\\AndroidAutomator.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\androidactivities\\1.0.2"
+    },
+    {
+      "Package": {
+        "Id": "Appium.WebDriver",
+        "Version": "4.0.0.6-beta"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\appium.webdriver\\4.0.0.6-beta\\lib\\net45\\Appium.Net.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\appium.webdriver\\4.0.0.6-beta"
+    },
+    {
+      "Package": {
+        "Id": "AvalonEdit",
+        "Version": "5.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\avalonedit\\5.0.3\\lib\\Net40\\ICSharpCode.AvalonEdit.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\avalonedit\\5.0.3"
+    },
+    {
+      "Package": {
+        "Id": "BalaReva.CSV.Activities",
+        "Version": "2019.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities\\2019.2.0\\lib\\BalaReva.Csv.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities\\2019.2.0\\lib\\BalaReva.Csv.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities\\2019.2.0\\lib\\BalaReva.Excel.Base.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\balareva.csv.activities\\2019.2.0"
+    },
+    {
+      "Package": {
+        "Id": "BitMiracle.Docotic.Pdf",
+        "Version": "5.10.9957"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bitmiracle.docotic.pdf\\5.10.9957\\lib\\net40\\BitMiracle.Docotic.Pdf.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\bitmiracle.docotic.pdf\\5.10.9957"
+    },
+    {
+      "Package": {
+        "Id": "BouncyCastle",
+        "Version": "1.8.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\bouncycastle\\1.8.5\\lib\\BouncyCastle.Crypto.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\bouncycastle\\1.8.5"
+    },
+    {
+      "Package": {
+        "Id": "BurntToastActivities",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\burnttoastactivities\\1.1.0\\lib\\BurntToastActivities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\burnttoastactivities\\1.1.0"
+    },
+    {
+      "Package": {
+        "Id": "Castle.Core",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\castle.core\\4.3.1\\lib\\net45\\Castle.Core.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\castle.core\\4.3.1"
+    },
+    {
+      "Package": {
+        "Id": "ClosedXML",
+        "Version": "0.87.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\closedxml\\0.87.1\\lib\\net40\\ClosedXML.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\closedxml\\0.87.1"
+    },
+    {
+      "Package": {
+        "Id": "CredentialManagement",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\credentialmanagement\\1.0.2\\lib\\net35\\CredentialManagement.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\credentialmanagement\\1.0.2"
+    },
+    {
+      "Package": {
+        "Id": "CsvHelper",
+        "Version": "15.0.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper\\15.0.5\\lib\\net45\\CsvHelper.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\csvhelper\\15.0.5"
+    },
+    {
+      "Package": {
+        "Id": "DH.WindowsXT.Activities",
+        "Version": "1.4.14.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities\\1.4.14.3\\lib\\net452\\DotNetZip.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities\\1.4.14.3\\lib\\net452\\ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities\\1.4.14.3\\lib\\net452\\WindowsXT.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\dh.windowsxt.activities\\1.4.14.3"
+    },
+    {
+      "Package": {
+        "Id": "DocumentFormat.OpenXml",
+        "Version": "2.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\documentformat.openxml\\2.5.0\\lib\\DocumentFormat.OpenXml.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\documentformat.openxml\\2.5.0"
+    },
+    {
+      "Package": {
+        "Id": "DocX",
+        "Version": "1.0.0.18"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\docx\\1.0.0.18\\lib\\net40\\DocX.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\docx\\1.0.0.18"
+    },
+    {
+      "Package": {
+        "Id": "DotNetSeleniumExtras.PageObjects",
+        "Version": "3.11.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0\\lib\\net45\\SeleniumExtras.PageObjects.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\dotnetseleniumextras.pageobjects\\3.11.0"
+    },
+    {
+      "Package": {
+        "Id": "ExchangeSharedMailBoxActivities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\exchangesharedmailboxactivities\\1.0.0\\lib\\ExchangeSharedMailBoxActivities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\exchangesharedmailboxactivities\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Extended.Wpf.Toolkit",
+        "Version": "3.8.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1\\lib\\net40\\Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1\\lib\\net40\\Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1\\lib\\net40\\Xceed.Wpf.Toolkit.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\extended.wpf.toolkit\\3.8.1"
+    },
+    {
+      "Package": {
+        "Id": "Fluent.Ribbon",
+        "Version": "3.5.1.198"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluent.ribbon\\3.5.1.198\\lib\\net45\\Fluent.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluent.ribbon\\3.5.1.198\\lib\\net45\\System.Windows.Interactivity.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\fluent.ribbon\\3.5.1.198"
+    },
+    {
+      "Package": {
+        "Id": "FluentFTP",
+        "Version": "19.1.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fluentftp\\19.1.2\\lib\\net45\\FluentFTP.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\fluentftp\\19.1.2"
+    },
+    {
+      "Package": {
+        "Id": "FSharp.Core",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\fsharp.core\\4.7.1\\lib\\net45\\FSharp.Core.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\fsharp.core\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis",
+        "Version": "1.43.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis\\1.43.0\\lib\\net45\\Google.Apis.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis\\1.43.0\\lib\\net45\\Google.Apis.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis\\1.43.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Auth",
+        "Version": "1.43.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth\\1.43.0\\lib\\net45\\Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth\\1.43.0\\lib\\net45\\Google.Apis.Auth.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.auth\\1.43.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Calendar.v3",
+        "Version": "1.43.0.1872"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.calendar.v3\\1.43.0.1872\\lib\\net45\\Google.Apis.Calendar.v3.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.calendar.v3\\1.43.0.1872"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Core",
+        "Version": "1.43.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.core\\1.43.0\\lib\\net45\\Google.Apis.Core.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.core\\1.43.0"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.Gmail.v1",
+        "Version": "1.43.0.1859"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.gmail.v1\\1.43.0.1859\\lib\\net45\\Google.Apis.Gmail.v1.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.gmail.v1\\1.43.0.1859"
+    },
+    {
+      "Package": {
+        "Id": "Google.Apis.PeopleService.v1",
+        "Version": "1.43.0.1876"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.peopleservice.v1\\1.43.0.1876\\lib\\net45\\Google.Apis.PeopleService.v1.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\google.apis.peopleservice.v1\\1.43.0.1876"
+    },
+    {
+      "Package": {
+        "Id": "Humanizer.Core",
+        "Version": "2.4.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\humanizer.core\\2.4.2\\lib\\netstandard2.0\\Humanizer.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\humanizer.core\\2.4.2"
+    },
+    {
+      "Package": {
+        "Id": "interop.domino.dll",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\interop.domino.dll\\1.0.0\\lib\\Interop.Domino.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\interop.domino.dll\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "iTextSharp",
+        "Version": "5.5.13"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\itextsharp\\5.5.13\\lib\\itextsharp.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\itextsharp\\5.5.13"
+    },
+    {
+      "Package": {
+        "Id": "IvanAkcheurov.NTextCat.Lib",
+        "Version": "0.2.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib\\0.2.1.1\\lib\\net40\\IvanAkcheurov.Commons.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib\\0.2.1.1\\lib\\net40\\IvanAkcheurov.NClassify.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib\\0.2.1.1\\lib\\net40\\IvanAkcheurov.NTextCat.Lib.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\ivanakcheurov.ntextcat.lib\\0.2.1.1"
+    },
+    {
+      "Package": {
+        "Id": "linq2db",
+        "Version": "2.9.7"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\linq2db\\2.9.7\\lib\\net46\\linq2db.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\linq2db\\2.9.7"
+    },
+    {
+      "Package": {
+        "Id": "linq2db.Sybase",
+        "Version": "2.9.7"
+      },
+      "Assemblies": [],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\linq2db.sybase\\2.9.7"
+    },
+    {
+      "Package": {
+        "Id": "Magick.NET-Q16-AnyCPU",
+        "Version": "7.14.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\magick.net-q16-anycpu\\7.14.5\\lib\\net40\\Magick.NET-Q16-AnyCPU.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\magick.net-q16-anycpu\\7.14.5"
+    },
+    {
+      "Package": {
+        "Id": "MathNet.Numerics",
+        "Version": "4.5.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\mathnet.numerics\\4.5.1\\lib\\net461\\MathNet.Numerics.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\mathnet.numerics\\4.5.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.Services.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Client.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1\\lib\\net45\\Microsoft.Workflow.Tracing.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Activities.Extensions",
+        "Version": "2.0.6.9"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib\\Net45\\Microsoft.Activities.Extensions.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9\\lib\\Net45\\Microsoft.Activities.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.activities.extensions\\2.0.6.9"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNet.SignalR.Client",
+        "Version": "2.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0\\lib\\net45\\Microsoft.AspNet.SignalR.Client.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnet.signalr.client\\2.4.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Connections.Abstractions",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Connections.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Connections.Client",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Connections.Client.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Connections.Common",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Connections.Common.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.Http.Features",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.Http.Features.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.SignalR.Client",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Client.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.SignalR.Client.Core",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Client.Core.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.SignalR.Common",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Common.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.AspNetCore.SignalR.Protocols.Json",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6\\lib\\netstandard2.0\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Azure.CognitiveServices.Vision.ComputerVision",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\5.0.0\\lib\\net452\\Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.azure.cognitiveservices.vision.computervision\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Bcl.AsyncInterfaces",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\lib\\net461\\Microsoft.Bcl.AsyncInterfaces.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.CSharp",
+        "Version": "4.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.csharp\\4.5.0\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.csharp\\4.5.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Exchange.WebServices",
+        "Version": "2.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\lib\\40\\Microsoft.Exchange.WebServices.Auth.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0\\lib\\40\\Microsoft.Exchange.WebServices.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.exchange.webservices\\2.2.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Configuration",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Configuration.Abstractions",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Configuration.Binder",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Configuration.Binder.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.DependencyInjection",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.6\\lib\\net461\\Microsoft.Extensions.DependencyInjection.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.DependencyInjection.Abstractions",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Logging",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Logging.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Logging.Abstractions",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Options",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.options\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Options.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.options\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Extensions.Primitives",
+        "Version": "3.1.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6\\lib\\netstandard2.0\\Microsoft.Extensions.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.6"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Identity.Client",
+        "Version": "4.14.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.identity.client\\4.14.0\\lib\\net45\\Microsoft.Identity.Client.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.identity.client\\4.14.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Office.Interop.Excel",
+        "Version": "15.0.4795.1000"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1000\\lib\\net20\\Microsoft.Office.Interop.Excel.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.office.interop.excel\\15.0.4795.1000"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Definitions.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text.Choice",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.choice\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.Choice.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.choice\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text.DateTime",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.datetime\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.DateTime.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.datetime\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text.Number",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.number\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.Number.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.number\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text.NumberWithUnit",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.numberwithunit\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.NumberWithUnit.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.numberwithunit\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Recognizers.Text.Sequence",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.sequence\\1.1.1\\lib\\net452\\Microsoft.Recognizers.Text.Sequence.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.recognizers.text.sequence\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Rest.ClientRuntime",
+        "Version": "2.3.21"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21\\lib\\net461\\Microsoft.Rest.ClientRuntime.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.21"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Rest.ClientRuntime.Azure",
+        "Version": "3.3.19"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.19\\lib\\net461\\Microsoft.Rest.ClientRuntime.Azure.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.19"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Toolkit.Uwp.Notifications",
+        "Version": "6.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\6.0.0\\lib\\net461\\Microsoft.Toolkit.Uwp.Notifications.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.toolkit.uwp.notifications\\6.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.VisualStudio.OLE.Interop",
+        "Version": "7.10.6071"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\7.10.6071\\lib\\Microsoft.VisualStudio.OLE.Interop.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.visualstudio.ole.interop\\7.10.6071"
+    },
+    {
+      "Package": {
+        "Id": "Microsoft.Xaml.Behaviors.Wpf",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.0.1\\lib\\net45\\Microsoft.Xaml.Behaviors.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "MimeKit",
+        "Version": "2.0.6"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\mimekit\\2.0.6\\lib\\net45\\MimeKit.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\mimekit\\2.0.6"
+    },
+    {
+      "Package": {
+        "Id": "Newtonsoft.Json",
+        "Version": "12.0.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json\\12.0.3\\lib\\net45\\Newtonsoft.Json.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\newtonsoft.json\\12.0.3"
+    },
+    {
+      "Package": {
+        "Id": "NLog",
+        "Version": "4.5.11"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\nlog\\4.5.11\\lib\\net45\\NLog.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\nlog\\4.5.11"
+    },
+    {
+      "Package": {
+        "Id": "NPOI",
+        "Version": "2.4.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OOXML.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXml4Net.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\npoi\\2.4.1\\lib\\net45\\NPOI.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\npoi\\2.4.1"
+    },
+    {
+      "Package": {
+        "Id": "Password_Generator.Activities",
+        "Version": "5.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\password_generator.activities\\5.0.0\\lib\\Password_Generator.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\password_generator.activities\\5.0.0"
+    },
+    {
+      "Package": {
+        "Id": "PDF_Activities",
+        "Version": "1.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\pdf_activities\\1.0.2\\lib\\pdfLibrary.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\pdf_activities\\1.0.2"
+    },
+    {
+      "Package": {
+        "Id": "RestSharp",
+        "Version": "106.6.10"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\restsharp\\106.6.10\\lib\\net452\\RestSharp.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\restsharp\\106.6.10"
+    },
+    {
+      "Package": {
+        "Id": "SB.OutlookMail.Activities",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sb.outlookmail.activities\\1.0.0\\lib\\OutlookMail.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\sb.outlookmail.activities\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "Selenium.Support",
+        "Version": "3.141.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.support\\3.141.0\\lib\\net45\\WebDriver.Support.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.support\\3.141.0"
+    },
+    {
+      "Package": {
+        "Id": "Selenium.WebDriver",
+        "Version": "3.141.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.webdriver\\3.141.0\\lib\\net45\\WebDriver.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\selenium.webdriver\\3.141.0"
+    },
+    {
+      "Package": {
+        "Id": "SharpZipLib",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\sharpziplib\\1.2.0\\lib\\net45\\ICSharpCode.SharpZipLib.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\sharpziplib\\1.2.0"
+    },
+    {
+      "Package": {
+        "Id": "SSH.NET",
+        "Version": "2016.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\ssh.net\\2016.1.0\\lib\\net40\\Renci.SshNet.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\ssh.net\\2016.1.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Buffers",
+        "Version": "4.5.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.buffers\\4.5.1\\lib\\net461\\System.Buffers.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.buffers\\4.5.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Collections.Immutable",
+        "Version": "1.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable\\1.5.0\\lib\\netstandard2.0\\System.Collections.Immutable.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.collections.immutable\\1.5.0"
+    },
+    {
+      "Package": {
+        "Id": "System.ComponentModel.Annotations",
+        "Version": "4.7.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\lib\\net461\\System.ComponentModel.Annotations.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io\\4.3.0\\lib\\net45\\_._"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.io\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Abstractions",
+        "Version": "3.0.10"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.abstractions\\3.0.10\\lib\\net40\\System.IO.Abstractions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.abstractions\\3.0.10"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Compression",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.compression\\4.3.0\\lib\\net46\\System.IO.Compression.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.compression\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.IO.Pipelines",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.pipelines\\4.7.1\\lib\\netstandard2.0\\System.IO.Pipelines.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.io.pipelines\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Management.Automation",
+        "Version": "6.1.7601.17515"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.management.automation\\6.1.7601.17515\\lib\\net45\\System.Management.Automation.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.management.automation\\6.1.7601.17515"
+    },
+    {
+      "Package": {
+        "Id": "System.Memory",
+        "Version": "4.5.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.memory\\4.5.4\\lib\\net461\\System.Memory.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.memory\\4.5.4"
+    },
+    {
+      "Package": {
+        "Id": "System.Net.Http",
+        "Version": "4.3.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.net.http\\4.3.1\\lib\\net46\\System.Net.Http.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.net.http\\4.3.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Numerics.Vectors",
+        "Version": "4.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\lib\\net46\\System.Numerics.Vectors.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.numerics.vectors\\4.5.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Runtime.CompilerServices.Unsafe",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\lib\\net461\\System.Runtime.CompilerServices.Unsafe.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Algorithms",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\lib\\net461\\System.Security.Cryptography.Algorithms.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Encoding",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\lib\\net46\\System.Security.Cryptography.Encoding.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.Primitives",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\lib\\net46\\System.Security.Cryptography.Primitives.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Security.Cryptography.X509Certificates",
+        "Version": "4.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\lib\\net461\\System.Security.Cryptography.X509Certificates.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Text.Encodings.Web",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.encodings.web\\4.7.1\\lib\\net461\\System.Text.Encodings.Web.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.encodings.web\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Text.Json",
+        "Version": "4.7.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.json\\4.7.2\\lib\\net461\\System.Text.Json.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.text.json\\4.7.2"
+    },
+    {
+      "Package": {
+        "Id": "System.Threading.Channels",
+        "Version": "4.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.channels\\4.7.1\\lib\\net461\\System.Threading.Channels.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.channels\\4.7.1"
+    },
+    {
+      "Package": {
+        "Id": "System.Threading.Tasks.Dataflow",
+        "Version": "4.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.dataflow\\4.10.0\\lib\\netstandard2.0\\System.Threading.Tasks.Dataflow.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.dataflow\\4.10.0"
+    },
+    {
+      "Package": {
+        "Id": "System.Threading.Tasks.Extensions",
+        "Version": "4.5.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\lib\\net461\\System.Threading.Tasks.Extensions.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4"
+    },
+    {
+      "Package": {
+        "Id": "System.ValueTuple",
+        "Version": "4.5.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple\\4.5.0\\lib\\net461\\System.ValueTuple.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\system.valuetuple\\4.5.0"
+    },
+    {
+      "Package": {
+        "Id": "TinyCsvParser",
+        "Version": "2.5.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\tinycsvparser\\2.5.2\\lib\\net45\\TinyCsvParser.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\tinycsvparser\\2.5.2"
+    },
+    {
+      "Package": {
+        "Id": "UiPath",
+        "Version": "20.10.7585.27318"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath\\20.10.7585.27318\\lib\\UiPath.Interop.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath\\20.10.7585.27318"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Activities.Api",
+        "Version": "20.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0\\lib\\net452\\UiPath.Activities.Api.Base.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0\\lib\\net452\\UiPath.Api.Base.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0\\lib\\net452\\UiPath.Robot.Activities.Api.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0\\lib\\net452\\UiPath.Studio.Activities.Api.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0\\lib\\net452\\UiPath.Studio.Api.Base.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.activities.api\\20.4.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.CefSharpBundle",
+        "Version": "1.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0\\lib\\net452\\CefSharp.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cefsharpbundle\\1.2.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Cognitive.Activities",
+        "Version": "2.2.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities\\2.2.4\\lib\\net452\\UiPath.Cognitive.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities\\2.2.4\\lib\\net452\\UiPath.Cognitive.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities\\2.2.4\\lib\\net452\\UiPath.Cognitive.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.cognitive.activities\\2.2.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Credentials.Activities",
+        "Version": "1.1.6479.13204"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.credentials.activities\\1.1.6479.13204\\lib\\net40-client\\UiPath.Credentials.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.credentials.activities\\1.1.6479.13204"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Database.Activities",
+        "Version": "1.3.7369.25200"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200\\lib\\net452\\Microsoft.Data.ConnectionUI.Dialog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200\\lib\\net452\\UiPath.Database.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200\\lib\\net452\\UiPath.Database.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200\\lib\\net452\\UiPath.Database.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.database.activities\\1.3.7369.25200"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.DocumentProcessing.Contracts",
+        "Version": "1.9.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.9.0\\lib\\net461\\UiPath.DocumentProcessing.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.documentprocessing.contracts\\1.9.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Excel.Activities",
+        "Version": "2.9.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities\\2.9.3\\lib\\net461\\UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities\\2.9.3\\lib\\net461\\UiPath.Excel.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities\\2.9.3\\lib\\net461\\UiPath.Excel.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.excel.activities\\2.9.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FormActivityLibrary.Contracts",
+        "Version": "1.1.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\1.1.1\\lib\\net461\\UiPath.Form.ActivityLibrary.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.formactivitylibrary.contracts\\1.1.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.FTP.Activities",
+        "Version": "1.0.7495.12930"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities\\1.0.7495.12930\\lib\\net452\\UiPath.FTP.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities\\1.0.7495.12930\\lib\\net452\\UiPath.FTP.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities\\1.0.7495.12930\\lib\\net452\\UiPath.FTP.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ftp.activities\\1.0.7495.12930"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.IntelligentOCR.Activities",
+        "Version": "4.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.DocumentUnderstanding.Contracts.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.DocumentUnderstanding.Persistence.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.IntelligentOCR.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.IntelligentOCR.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.IntelligentOCR.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ClassificationStation.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ClassificationStation.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Data.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Digitization.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.DocumentClassification.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Host.Local.Infrastructure.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ImageProcessing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Language.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Localization.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.OCR.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.OutOfProcessUi.Common.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.OutOfProcessUi.Host.WCF.exe",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.PDF.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.PositionBasedExtraction.TemplateManager.exe",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.PositionBasedExtraction.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.TableProcessing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.TaxonomyManager.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.TaxonomyManager.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Telemetry.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.Utils.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ValidationStation.Host.Local.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ValidationStation.Integration.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ValidationStation.ValueParsing.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.ValidationStation.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0\\lib\\net461\\UiPath.SmartData.WPF.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.intelligentocr.activities\\4.10.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Mail.Activities",
+        "Version": "1.9.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3\\lib\\net461\\MailKit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3\\lib\\net461\\MimeKit.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3\\lib\\net461\\UiPath.Mail.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3\\lib\\net461\\UiPath.Mail.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3\\lib\\net461\\UiPath.Mail.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.mail.activities\\1.9.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MicrosoftTxtRecognizer.Activities",
+        "Version": "0.1.6850.37240"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities\\0.1.6850.37240\\lib\\net452\\UiPath.MicrosoftTextRecognizer.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities\\0.1.6850.37240\\lib\\net452\\UiPath.MicrosoftTextRecognizer.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities\\0.1.6850.37240\\lib\\net452\\UiPath.MicrosoftTxtRecognizer.Activities.Design.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsofttxtrecognizer.activities\\0.1.6850.37240"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.MicrosoftVision.Activities",
+        "Version": "2.2.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities\\2.2.1\\lib\\net461\\UiPath.MicrosoftVision.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities\\2.2.1\\lib\\net461\\UiPath.MicrosoftVision.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities\\2.2.1\\lib\\net461\\UiPath.MicrosoftVision.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.microsoftvision.activities\\2.2.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OCR.Activities",
+        "Version": "2.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities\\2.4.0\\lib\\net461\\UiPath.OCR.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities\\2.4.0\\lib\\net461\\UiPath.OCR.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities\\2.4.0\\lib\\net461\\UiPath.OCR.Core.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.activities\\2.4.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.OCR.Contracts",
+        "Version": "2.7.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts\\2.7.1\\lib\\net461\\UiPath.OCR.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.ocr.contracts\\2.7.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities\\3.3.0\\lib\\net461\\UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities\\3.3.0\\lib\\net461\\UiPath.PDF.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities\\3.3.0\\lib\\net461\\UiPath.PDF.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.pdf.activities\\3.3.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Persistence.Activities",
+        "Version": "1.1.8"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8\\lib\\net461\\UiPath.Orchestrator.Service.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8\\lib\\net461\\UiPath.Persistence.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8\\lib\\net461\\UiPath.Persistence.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8\\lib\\net461\\UiPath.Persistence.Orchestrator.Client.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.persistence.activities\\1.1.8"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Platform",
+        "Version": "20.10.3-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.platform\\20.10.3-preview\\lib\\net461\\UiPath.Platform.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.platform\\20.10.3-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Script.Activities",
+        "Version": "1.0.7495.12930"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930\\lib\\net45\\AutoHotkey.Interop.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930\\lib\\net45\\UiPath.Script.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930\\lib\\net45\\UiPath.Script.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930\\lib\\net45\\UiPath.Script.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.script.activities\\1.0.7495.12930"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Activities",
+        "Version": "20.10.1-beta.1189431"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\CustomInputForm.exe",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\UiPath.OrchestratorClient.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\UiPath.System.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431\\lib\\net461\\UiPath.System.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.activities\\20.10.1-beta.1189431"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.System.Extended.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities\\1.0.1\\lib\\net452\\UiPath.SystemExtended.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities\\1.0.1\\lib\\net452\\UiPath.SystemExtended.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.system.extended.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Telemetry.Client",
+        "Version": "1.2.20"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.telemetry.client\\1.2.20\\lib\\net461\\TelemetryClient.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.telemetry.client\\1.2.20"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Terminal.Activities",
+        "Version": "2.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\NLog.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\Turbosoft.TTerm.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.Attachmate.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.AttachmateExtra.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.BlueZone.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.Host.exe",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.IBM.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\UiPath.Terminal.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1\\lib\\net452\\ttermdotnet.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.terminal.activities\\2.0.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.UIAutomation.Activities",
+        "Version": "20.10.4-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.DataGrid.Contrib.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.CV.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.CV.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UIAutomationCore.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UIAutomationNext.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UIAutomationNext.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UIAutomationNext.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview\\lib\\net461\\UiPath.Wizards.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.uiautomation.activities\\20.10.4-preview"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Vision",
+        "Version": "2.2.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision\\2.2.0\\lib\\net461\\UiPath.Vision.Core.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision\\2.2.0\\lib\\net461\\UiPath.Vision.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.vision\\2.2.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.6.0-beta.1153078"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities\\1.6.0-beta.1153078\\lib\\net452\\UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities\\1.6.0-beta.1153078\\lib\\net452\\UiPath.Web.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities\\1.6.0-beta.1153078\\lib\\net452\\UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.webapi.activities\\1.6.0-beta.1153078"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Word.Activities",
+        "Version": "1.5.3"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities\\1.5.3\\lib\\net461\\UiPath.Word.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities\\1.5.3\\lib\\net461\\UiPath.Word.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities\\1.5.3\\lib\\net461\\UiPath.Word.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.word.activities\\1.5.3"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WordsToNumbers",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\lib\\netstandard2.0\\Numsense.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.File.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities\\1.0.4\\lib\\net452\\UiPathTeam.File.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities\\1.0.4\\lib\\net452\\UiPathTeam.File.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.file.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.GenerateRandomPassword.Activities",
+        "Version": "1.0.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.generaterandompassword.activities\\1.0.4\\lib\\net452\\UiPathTeam.GenerateRandomPassword.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.generaterandompassword.activities\\1.0.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.Gmail.Activities",
+        "Version": "1.0.6822.33137"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities\\1.0.6822.33137\\lib\\net452\\UiPathTeam.Gmail.Activities.Designer.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities\\1.0.6822.33137\\lib\\net452\\UiPathTeam.Gmail.Activities.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.gmail.activities\\1.0.6822.33137"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.JsonDataConverter.Activities",
+        "Version": "1.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.jsondataconverter.activities\\1.1.0\\lib\\JsonDataConversion.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.jsondataconverter.activities\\1.1.0"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.REFramework.Activities",
+        "Version": "1.0.7.20034"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities\\1.0.7.20034\\lib\\net461\\UiPath.CustomReFramework.Activities.Design.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities\\1.0.7.20034\\lib\\net461\\UiPath.CustomReFramework.Activities.dll",
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities\\1.0.7.20034\\lib\\net461\\UiPath.CustomReFramework.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.reframework.activities\\1.0.7.20034"
+    },
+    {
+      "Package": {
+        "Id": "UiPathTeam.XmlDataConverter.Activities",
+        "Version": "1.0.1"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.xmldataconverter.activities\\1.0.1\\lib\\XmlDataConversion.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\uipathteam.xmldataconverter.activities\\1.0.1"
+    },
+    {
+      "Package": {
+        "Id": "VVaidya.DatatableToHTML.Activities",
+        "Version": "2.1.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\kckustomac\\.nuget\\packages\\vvaidya.datatabletohtml.activities\\2.1.0\\lib\\DataTableToHtmlTable.dll"
+      ],
+      "Path": "C:\\Users\\kckustomac\\.nuget\\packages\\vvaidya.datatabletohtml.activities\\2.1.0"
+    }
+  ]
+}

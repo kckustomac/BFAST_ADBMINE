@@ -1,0 +1,597 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="KILLPROCESSES" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Diagnostics;assembly=System" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="ARG_I__KEEP_BROWSER" Type="InArgument(x:Boolean)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>803,3571</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>CloseAllApplications_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="[KILLPROCESSES] ::: Close All Relevant Applications&#xA;&#xA;Pre Condition: N/A&#xA;Post Condtion: N/A" DisplayName="KILLPROCESSES" sap:VirtualizedContainerService.HintSize="783,3511" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sco:Collection(sd:Process)" Name="processList" />
+      <Variable x:TypeArguments="x:Boolean" Name="temp_bool" />
+      <Variable x:TypeArguments="x:Boolean" Name="errorwnd" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="LOG__BEG" sap:VirtualizedContainerService.HintSize="741,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;[MSG] ::: [BEG] ::: [KILL PROCESSES] ::: [&quot;+DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;)+&quot;]&quot;]" />
+    <Sequence DisplayName="Killproc-option1" sap:VirtualizedContainerService.HintSize="741,391" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill IE" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_39" ProcessName="iexplore" />
+      <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Excel" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_40" ProcessName="EXCEL" />
+      <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Acrobat reader" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_41" ProcessName="AcroRd32" />
+      <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill notepad" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_42" ProcessName="notepad" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,114" sap2010:WorkflowViewState.IdRef="Sequence_22">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill AHK" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_43" ProcessName="ahk" />
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+    <Sequence DisplayName="GetListandKill" sap:VirtualizedContainerService.HintSize="741,2654" sap2010:WorkflowViewState.IdRef="Sequence_6">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:GetProcesses ContinueOnError="{x:Null}" DisplayName="Get System Processes" sap:VirtualizedContainerService.HintSize="699,22" sap2010:WorkflowViewState.IdRef="GetProcesses_1" Processes="[ProcessList]" />
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="699,236" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="242,158" sap2010:WorkflowViewState.IdRef="Sequence_23">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="UI--&quot;iBM-Connector--SessionWindow--Main&quot;" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="504,1305" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="486,1078" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="ELEMENT EXISTS ??" Exists="[temp_bool]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="93890d3a6d1ac17d1cafc3c6988cbbd6" Selector="&lt;wnd app='pcsws.exe' cls='PCSWS:Main*' title='Session*' /&gt;" TimeoutMS="2222" WaitForReady="INTERACTIVE" />
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[temp_bool]" DisplayName="VAR_GUI__SUB_EXISTS" sap:VirtualizedContainerService.HintSize="464,808" sap2010:WorkflowViewState.IdRef="If_2">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="336,660" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="333" DelayMS="333" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='pcsws.exe' cls='PCSWS:Main*' title='Session*' /&gt;" WaitForReady="INTERACTIVE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <InvokeMethod DisplayName="Sendkeys__alt_fx" sap:VirtualizedContainerService.HintSize="314,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="SendWait" TargetType="swf:SendKeys">
+                            <InArgument x:TypeArguments="x:String">%(fx)</InArgument>
+                          </InvokeMethod>
+                          <Delay DisplayName="Delay_1.1s" Duration="[TimeSpan.FromMilliseconds(1111)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Delay_5" />
+                          <Delay DisplayName="Delay_1.1s" Duration="[TimeSpan.FromMilliseconds(1111)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                          <InvokeMethod DisplayName="Sendkeys__alt_fx" sap:VirtualizedContainerService.HintSize="314,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="SendWait" TargetType="swf:SendKeys">
+                            <InArgument x:TypeArguments="x:String">n</InArgument>
+                          </InvokeMethod>
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="490,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="1111" DelayMS="1111" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="504,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="71" OffsetY="20" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="229d115a0df3888b6857b6a266ebed47" Selector="&lt;wnd app='werfault.exe' cls='#32770' title='PCSWS.EXE' /&gt;&lt;wnd aaname='PCSWS.EXE' cls='DirectUIHWND' /&gt;&lt;wnd cls='Button' title='Close the program' /&gt;" TimeoutMS="2222" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="504,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="358,527" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Basic" sap:VirtualizedContainerService.HintSize="336,403" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'pcsws.exe Session'" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="717" OffsetY="14" Position="TopLeft" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3686b1e1ec652e8ab270d433d423f2a8" Selector="&lt;wnd app='pcsws.exe' cls='PCSWS:Main*' title='Session A - [24 x 80]' /&gt;" WaitForReady="INTERACTIVE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                      </ui:Click>
+                      <InvokeMethod DisplayName="Sendkeys__alt_fx" sap:VirtualizedContainerService.HintSize="314,133" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="SendWait" TargetType="swf:SendKeys">
+                        <InArgument x:TypeArguments="x:String">%(fx)</InArgument>
+                      </InvokeMethod>
+                    </Sequence>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="1111" DelayMS="1111" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="504,106" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition OffsetX="71" OffsetY="20" Position="TopLeft" />
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="229d115a0df3888b6857b6a266ebed47" Selector="&lt;wnd app='werfault.exe' cls='#32770' title='*' /&gt;&lt;wnd aaname='*' cls='DirectUIHWND' /&gt;&lt;wnd cls='Button' title='Close the program' /&gt;&lt;ctrl name='Close the program' role='push button' text='Close the program' /&gt;" TimeoutMS="3333" WaitForReady="INTERACTIVE" />
+                </ui:Click.Target>
+              </ui:Click>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+      </ui:CommentOut>
+      <Sequence DisplayName="UI--&quot;uipath-web-browser&quot;" sap:VirtualizedContainerService.HintSize="699,66" sap2010:WorkflowViewState.IdRef="Sequence_21">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="464,538" sap2010:WorkflowViewState.IdRef="If_5">
+          <If.Else>
+            <Sequence DisplayName="UI--&quot;uipath-web-browser&quot;" sap:VirtualizedContainerService.HintSize="222,390" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="486,844" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="ELEMENT EXISTS ??" Exists="[temp_bool]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="93890d3a6d1ac17d1cafc3c6988cbbd6" Selector="&lt;wnd app='brave.exe' /&gt;" TimeoutMS="2222" WaitForReady="INTERACTIVE" />
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[temp_bool]" DisplayName="VAR_GUI__SUB_EXISTS" sap:VirtualizedContainerService.HintSize="464,574" sap2010:WorkflowViewState.IdRef="If_3">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="336,426" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="333" DelayMS="333" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                            <ui:Click.CursorPosition>
+                              <ui:CursorPosition Position="Center">
+                                <ui:CursorPosition.OffsetX>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetX>
+                                <ui:CursorPosition.OffsetY>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:CursorPosition.OffsetY>
+                              </ui:CursorPosition>
+                            </ui:Click.CursorPosition>
+                            <ui:Click.Target>
+                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='brave.exe' /&gt;" WaitForReady="INTERACTIVE">
+                                <ui:Target.TimeoutMS>
+                                  <InArgument x:TypeArguments="x:Int32" />
+                                </ui:Target.TimeoutMS>
+                              </ui:Target>
+                            </ui:Click.Target>
+                          </ui:Click>
+                          <InvokeMethod DisplayName="Sendkeys__alt_fx" sap:VirtualizedContainerService.HintSize="314,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_4" MethodName="SendWait" TargetType="swf:SendKeys">
+                            <InArgument x:TypeArguments="x:String">%(fx)</InArgument>
+                          </InvokeMethod>
+                          <Delay DisplayName="Delay_1.1s" Duration="[TimeSpan.FromMilliseconds(1111)]" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="490,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="583,1204" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:UiElementExists DisplayName="ELEMENT EXISTS ??" Exists="[temp_bool]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_3">
+                      <ui:UiElementExists.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="93890d3a6d1ac17d1cafc3c6988cbbd6" Selector="&lt;wnd app='brave.exe' /&gt;" TimeoutMS="2222" WaitForReady="INTERACTIVE" />
+                      </ui:UiElementExists.Target>
+                    </ui:UiElementExists>
+                    <If Condition="[temp_bool]" DisplayName="VAR_GUI__SUB_EXISTS" sap:VirtualizedContainerService.HintSize="561,934" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="436,786" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" ContinueOnError="True" DisplayName="Navigate-URL" sap:VirtualizedContainerService.HintSize="414,662" sap2010:WorkflowViewState.IdRef="WindowScope_2" Selector="&lt;wnd app='brave.exe' /&gt;" TimeoutMS="4444">
+                            <ui:WindowScope.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="240,554" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:MaximizeWindow Window="{x:Null}" ContinueOnError="True" DisplayName="Maximize window" sap:VirtualizedContainerService.HintSize="218,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+                                  <InvokeMethod DisplayName="Sendkeys__enter" sap:VirtualizedContainerService.HintSize="218,133" sap2010:WorkflowViewState.IdRef="InvokeMethod_5" MethodName="SendWait" TargetType="swf:SendKeys">
+                                    <InArgument x:TypeArguments="x:String">{ENTER}</InArgument>
+                                  </InvokeMethod>
+                                  <Delay DisplayName="Delay_77ms" Duration="[TimeSpan.FromMilliseconds(77)]" sap:VirtualizedContainerService.HintSize="218,22" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                                  <InvokeMethod DisplayName="Sendkeys__alt_fx" sap:VirtualizedContainerService.HintSize="218,133" sap2010:WorkflowViewState.IdRef="InvokeMethod_6" MethodName="SendWait" TargetType="swf:SendKeys">
+                                    <InArgument x:TypeArguments="x:String">%(fx)</InArgument>
+                                  </InvokeMethod>
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:WindowScope.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:WindowScope>
+                        </Sequence>
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="587,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+              <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill &quot;brave-portable.exe&quot;" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_69" ProcessName="brave-portable.exe" />
+              <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill &quot;brave.exe&quot;" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_70" ProcessName="brave.exe" />
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+      <ui:ForEach x:TypeArguments="sd:Process" CurrentIndex="{x:Null}" DisplayName="For each&lt;process&gt;" sap:VirtualizedContainerService.HintSize="699,1972" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[ProcessList]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="sd:Process">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Process" Name="item" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="KillTheseProcesses" sap:VirtualizedContainerService.HintSize="663,1838" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If Condition="[item.ProcessName=&quot;Fsmain&quot; or item.ProcessName.Contains(&quot;cadenceapp&quot;)]" DisplayName="If cadance is open" sap:VirtualizedContainerService.HintSize="621,842" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Sequence DisplayName="KillCadence" sap:VirtualizedContainerService.HintSize="476,694" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill FS Main" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="KillProcess_14" ProcessName="Fsmain" />
+                    <Delay DisplayName="Delay 2 Seconds" Duration="[TimeSpan.FromMilliseconds(2000)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" ContinueOnError="True" DisplayName="CadenceAppManager_Kill" sap:VirtualizedContainerService.HintSize="434,416" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="611d2ea3c44e59e918c55cb016af5741" Selector="&lt;wnd app='cadenceappmanager.exe' ctrlname='frmAppManager' /&gt;" TimeoutMS="3333">
+                      <ui:WindowScope.Body>
+                        <ActivityAction x:TypeArguments="x:Object">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MaximizeWindow Window="{x:Null}" ContinueOnError="True" DisplayName="Maximize window" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" />
+                            <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" ClickBeforeTyping="False" ContinueOnError="True" DisplayName="Send hotkey" EmptyField="False" sap:VirtualizedContainerService.HintSize="334,116" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f4" KeyModifiers="Alt" SendWindowMessages="False" SpecialKey="True">
+                              <ui:SendHotkey.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="200" WaitForReady="INTERACTIVE" />
+                              </ui:SendHotkey.Target>
+                            </ui:SendHotkey>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:WindowScope.Body>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:WindowScope>
+                    <Delay DisplayName="Delay_0.7sec" Duration="[TimeSpan.FromMilliseconds(777)]" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_4" />
+                  </Sequence>
+                </If.Then>
+              </If>
+              <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[item.ProcessName]" sap:VirtualizedContainerService.HintSize="621,864" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If x:Key="chrome" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_6">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill &quot;chrome&quot;" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_71" ProcessName="chrome" />
+                  </If.Else>
+                </If>
+                <ui:KillProcess Process="{x:Null}" x:Key="iexplore" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_16" ProcessName="iexplore" />
+                <ui:KillProcess Process="{x:Null}" x:Key="EXCEL" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_17" ProcessName="EXCEL" />
+                <ui:KillProcess Process="{x:Null}" x:Key="AcroRd32" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_18" ProcessName="AcroRd32" />
+                <ui:KillProcess Process="{x:Null}" x:Key="WINWORD" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_19" ProcessName="WINWORD" />
+                <ui:KillProcess Process="{x:Null}" x:Key="notepad" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_20" ProcessName="notepad" />
+                <ui:KillProcess Process="{x:Null}" x:Key="win32calc" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_21" ProcessName="win32calc" />
+                <ui:KillProcess Process="{x:Null}" x:Key="calc" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_22" ProcessName="calc" />
+                <ui:KillProcess Process="{x:Null}" x:Key="fsmain" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_37" ProcessName="fsmain" />
+                <ui:KillProcess Process="{x:Null}" x:Key="fsmain.exe" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_36" ProcessName="fsmain.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="Acrobat" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_44" ProcessName="Acrobat" />
+                <ui:KillProcess Process="{x:Null}" x:Key="Acrobat.exe" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_45" ProcessName="Acrobat.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="CrystalDelivery.exe" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_46" ProcessName="CrystalDelivery.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="Crystal Delivery" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_47" ProcessName="Crystal Delivery" />
+                <ui:KillProcess Process="{x:Null}" x:Key="CrystalDelivery" ContinueOnError="True" DisplayName="Kill process" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_48" ProcessName="CrystalDelivery" />
+                <If x:Key="firefox" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_7">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill &quot;firefox&quot;" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_72" ProcessName="firefox" />
+                  </If.Else>
+                </If>
+                <If x:Key="firefox.exe" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_8">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill &quot;firefox.exe&quot;" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_50" ProcessName="firefox.exe" />
+                  </If.Else>
+                </If>
+                <If x:Key="brave" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_9">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill brave" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_53" ProcessName="brave" />
+                  </If.Else>
+                </If>
+                <If x:Key="Brave Portable" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_10">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Brave Portable" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_54" ProcessName="Brave Portable" />
+                  </If.Else>
+                </If>
+                <If x:Key="Brave Browser" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_11">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill Brave Browser" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_55" ProcessName="Brave Browser" />
+                  </If.Else>
+                </If>
+                <If x:Key="brave.exe" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_12">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill brave.exe" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_73" ProcessName="brave.exe" />
+                  </If.Else>
+                </If>
+                <If x:Key="brave-portable.exe" Condition="[ARG_I__KEEP_BROWSER]" DisplayName="If--skip-browser" sap:VirtualizedContainerService.HintSize="484,208" sap2010:WorkflowViewState.IdRef="If_13">
+                  <If.Else>
+                    <ui:KillProcess Process="{x:Null}" ContinueOnError="True" DisplayName="Kill brave-portable.exe" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_74" ProcessName="brave-portable.exe" />
+                  </If.Else>
+                </If>
+                <ui:KillProcess Process="{x:Null}" x:Key="Real Vision Image System" ContinueOnError="True" DisplayName="Kill Real Vision Image System" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_58" ProcessName="Real Vision Image System" />
+                <ui:KillProcess Process="{x:Null}" x:Key="RVI.exe" ContinueOnError="True" DisplayName="Kill RVI.exe" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_59" ProcessName="RVI.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="PCSWS.EXE" ContinueOnError="True" DisplayName="Kill PCSWS.EXE" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_60" ProcessName="PCSWS.EXE" />
+                <ui:KillProcess Process="{x:Null}" x:Key="pcsws.exe" ContinueOnError="True" DisplayName="Kill pcsws.exe" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_61" ProcessName="pcsws.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="PCSWS" ContinueOnError="True" DisplayName="Kill PCSWS" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_62" ProcessName="PCSWS" />
+                <ui:KillProcess Process="{x:Null}" x:Key="AS400" ContinueOnError="True" DisplayName="Kill AS400" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_63" ProcessName="AS400" />
+                <ui:KillProcess Process="{x:Null}" x:Key="RVI Image System 8" ContinueOnError="True" DisplayName="Kill RVI Image System 8" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_64" ProcessName="RVI Image System 8" />
+                <ui:KillProcess Process="{x:Null}" x:Key="RVI" ContinueOnError="True" DisplayName="Kill RVI" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_65" ProcessName="RVI" />
+                <ui:KillProcess Process="{x:Null}" x:Key="PCSCM.EXE" ContinueOnError="True" DisplayName="Kill PCSCM.EXE" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_66" ProcessName="PCSCM.EXE" />
+                <ui:KillProcess Process="{x:Null}" x:Key="pcscm.exe" ContinueOnError="True" DisplayName="Kill PCSCM.EXE" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_67" ProcessName="pcscm.exe" />
+                <ui:KillProcess Process="{x:Null}" x:Key="pcscm" ContinueOnError="True" DisplayName="Kill PCSCM" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="KillProcess_68" ProcessName="pcscm" />
+                <x:Null x:Key="lol" />
+              </Switch>
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+      <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="1111" DelayMS="1111" DisplayName="Click 'Button'" sap:VirtualizedContainerService.HintSize="699,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+        <ui:Click.CursorPosition>
+          <ui:CursorPosition OffsetX="71" OffsetY="20" Position="TopLeft" />
+        </ui:Click.CursorPosition>
+        <ui:Click.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="229d115a0df3888b6857b6a266ebed47" Selector="&lt;wnd app='werfault.exe' cls='#32770' title='*' /&gt;&lt;wnd aaname='*' cls='DirectUIHWND' /&gt;&lt;wnd cls='Button' title='Close the program' /&gt;&lt;ctrl name='Close the program' role='push button' text='Close the program' /&gt;" TimeoutMS="2222" WaitForReady="INTERACTIVE" />
+        </ui:Click.Target>
+      </ui:Click>
+    </Sequence>
+    <ui:LogMessage DisplayName="LOG__END" sap:VirtualizedContainerService.HintSize="741,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;[MSG] ::: [END] ::: [KILL PROCESSES] ::: [&quot;+DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;)+&quot;]&quot;]" />
+  </Sequence>
+</Activity>

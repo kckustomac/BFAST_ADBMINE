@@ -1,0 +1,493 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DB_TRACKER" this:DB_TRACKER.ARG_I__PARAM_01="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_02="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_03="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_04="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_05="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_06="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_07="[string.Empty]" this:DB_TRACKER.ARG_I__PARAM_08="[string.Empty]" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="ARG_I__DB_FUNCTION" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__QUERY_TEXT" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_O__DTBL__RESULT" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="ARG_O__QUERY_RESULT" Type="OutArgument(x:String)" />
+    <x:Property Name="ARG_I__DTBL_INSERT" Type="InArgument(sd:DataTable)" />
+    <x:Property Name="ARG_I__BATCH_ID" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__DICT_CONFIG" Type="InArgument(scg:Dictionary(x:String, x:String))" />
+    <x:Property Name="ARG_I__PARAM_01" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_02" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_03" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_04" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_05" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_06" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_07" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__PARAM_08" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>538,1112</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>DB_TRACKER_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Database</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.Database</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Services.Common</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.PDF</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DB_TRACKER" sap:VirtualizedContainerService.HintSize="498,1032" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:DatabaseConnection" Name="VAR_DBCN__RPA_HUB" />
+      <Variable x:TypeArguments="x:String" Name="VAR_TEXT__TEMP01" />
+      <Variable x:TypeArguments="sd:DataTable" Name="VAR_DTBL__TEMP01" />
+      <Variable x:TypeArguments="x:String" Default="IDC_UPLOADS" Name="VAR_TEXT__PROJECT" />
+      <Variable x:TypeArguments="x:String" Default="UIPATH" Name="VAR_TEXT__ENV_BOTUSER" />
+      <Variable x:TypeArguments="x:String" Default="MACHINE" Name="VAR_TEXT__ENV_HOSTNAME" />
+      <Variable x:TypeArguments="x:String" Name="VAR_TEXT__QUERY" />
+      <Variable x:TypeArguments="x:String" Name="VAR_TEXT__DATE_YMD" />
+      <Variable x:TypeArguments="sd:DataTable" Name="VAR_DTBL__QUERY" />
+      <Variable x:TypeArguments="x:Int32" Name="VAR_INTG__AFFECTED_RECORDS" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="LOG__BEG" sap:VirtualizedContainerService.HintSize="476,91" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[&quot;[BEG] ::: [DB_TRACKER] ::: [&quot;+ARG_I__DB_FUNCTION+&quot;]&quot;]" />
+    <Sequence DisplayName="SetVars" sap:VirtualizedContainerService.HintSize="476,274" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:DatabaseConnect DatabaseConnection="[VAR_DBCN__RPA_HUB]" DisplayName="VAR_DBCN__RPA_HUB" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="DatabaseConnect_13" ProviderName="System.Data.SqlClient" ConnectionString="Data Source=tsql00001a.database.windows.net;Initial Catalog=rpa_hub;Persist Security Info=True;User ID=rpabot;Password=Qpm6piI8Bq9wde34AYom">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:DatabaseConnect>
+      <Sequence DisplayName="SetVars" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="Sequence_36">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:GetEnvironmentVariable DisplayName="Get environment variable" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_3" Variable="MachineName" VariableValue="[VAR_TEXT__ENV_HOSTNAME]" />
+        <ui:GetEnvironmentVariable DisplayName="Get environment variable" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_4" Variable="UserName" VariableValue="[VAR_TEXT__ENV_BOTUSER]" />
+        <Assign DisplayName="Assign__VAR_TEXT__DATE_YMD" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_35">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[VAR_TEXT__DATE_YMD]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("yyyyMMdd_HHmmss")]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Sequence DisplayName="SANITIZE" sap:VirtualizedContainerService.HintSize="314,51" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="ASCII-CHAR(39)" sap:VirtualizedContainerService.HintSize="486,605" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If Condition="[ARG_I__PARAM_01.Contains(chr(39))]" DisplayName="ARG_I__PARAM_01" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ARG_I__PARAM_01]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[ARG_I__PARAM_01.Replace(chr(39),string.empty)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </If.Then>
+            </If>
+            <If Condition="[ARG_I__PARAM_02.Contains(chr(39))]" DisplayName="ARG_I__PARAM_02" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="If_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ARG_I__PARAM_02]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[ARG_I__PARAM_02.Replace(chr(39),string.empty)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </If.Then>
+            </If>
+            <If Condition="[ARG_I__PARAM_03.Contains(chr(39))]" DisplayName="ARG_I__PARAM_03" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="If_11">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ARG_I__PARAM_03]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[ARG_I__PARAM_03.Replace(chr(39),string.empty)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </If.Then>
+            </If>
+            <If Condition="[ARG_I__PARAM_04.Contains(chr(39))]" DisplayName="ARG_I__PARAM_04" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="If_12">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:String">[ARG_I__PARAM_04]</OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:String">[ARG_I__PARAM_04.Replace(chr(39),string.empty)]</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </If.Then>
+            </If>
+          </Sequence>
+        </Sequence>
+        <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[VAR_DTBL__TEMP01]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[new system.Data.DataTable]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[VAR_DTBL__QUERY]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[new system.Data.DataTable]</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_40">
+          <Assign.To>
+            <OutArgument x:TypeArguments="sd:DataTable">[ARG_O__DTBL__RESULT]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="sd:DataTable">[new system.Data.DataTable]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+    </Sequence>
+    <Switch x:TypeArguments="x:String" DisplayName="Switch" Expression="[ARG_I__DB_FUNCTION]" sap:VirtualizedContainerService.HintSize="476,332" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+      <Switch.Default>
+        <Sequence sap:VirtualizedContainerService.HintSize="200,100" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </Sequence>
+      </Switch.Default>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Sequence x:Key="ORCHESTRATOR_ASSETS" DisplayName="ORCHESTRATOR_ASSETS" sap:VirtualizedContainerService.HintSize="719,51" sap2010:WorkflowViewState.IdRef="Sequence_66">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If Condition="[((NOT String.IsNullOrEmpty(ARG_I__PARAM_01)) AND (NOT (ARG_I__PARAM_01=&quot;&quot;)))]" DisplayName="Check SP Params" sap:VirtualizedContainerService.HintSize="697,462" sap2010:WorkflowViewState.IdRef="If_33">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If.Then>
+            <Sequence sap:VirtualizedContainerService.HintSize="336,312" sap2010:WorkflowViewState.IdRef="Sequence_63">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExecuteQuery ContinueOnError="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="Execute query" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_15" Sql="[&quot;&quot;+&quot;EXECUTE [dbo].[SP__IDC__ASSET_VALUE] &quot;+CHR(39)+ARG_I__PARAM_01+CHR(39)]" TimeoutMS="17777">
+                <ui:ExecuteQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteQuery.Parameters>
+              </ui:ExecuteQuery>
+              <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_60">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[ARG_O__QUERY_RESULT]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[ARG_O__DTBL__RESULT(0)(0).tostring]</InArgument>
+                </Assign.Value>
+              </Assign>
+            </Sequence>
+          </If.Then>
+        </If>
+        <If Condition="[((NOT String.IsNullOrEmpty(ARG_O__QUERY_RESULT)) AND (NOT (ARG_O__QUERY_RESULT=&quot;&quot;)))]" DisplayName="OrchestratorAssetLoadResult" sap:VirtualizedContainerService.HintSize="697,367" sap2010:WorkflowViewState.IdRef="If_34">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If.Then>
+            <Sequence sap:VirtualizedContainerService.HintSize="336,217" sap2010:WorkflowViewState.IdRef="Sequence_64">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="314,93" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[&quot;&quot;+&quot;[MSG] ::: Asset Loaded ::: [&quot;+&quot;&quot;+ARG_I__PARAM_01+&quot;&quot;+&quot;] ::: [&quot;+&quot;&quot;+ARG_O__QUERY_RESULT+&quot;&quot;+&quot;]&quot;]" />
+            </Sequence>
+          </If.Then>
+          <If.Else>
+            <Sequence sap:VirtualizedContainerService.HintSize="336,217" sap2010:WorkflowViewState.IdRef="Sequence_65">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="314,93" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Error" Message="[&quot;&quot;+&quot;[ERR] ::: UNABLE TO LOAD ASSET! ::: &quot;+ARG_I__PARAM_01]" />
+            </Sequence>
+          </If.Else>
+        </If>
+      </Sequence>
+      <Sequence x:Key="SP__BOT_AUDIT" DisplayName="SP__BOT_AUDIT" sap:VirtualizedContainerService.HintSize="336,312" sap2010:WorkflowViewState.IdRef="Sequence_75">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" ExistingDbConnection="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="SP__REPT__BOT_AUDIT" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_17" ProviderName="System.Data.SqlClient" Sql="[&quot;&quot;+&quot;EXECUTE [dbo].[SP__IC_REPT__LOG] &quot;+CHR(39)+&quot;&quot;+ARG_I__BATCH_ID+&quot;&quot;+CHR(39)+&quot;&quot;+&quot;, &quot;+&quot;&quot;+CHR(39)+&quot;&quot;+ARG_I__PARAM_01+&quot;&quot;+CHR(39)+&quot;&quot;+&quot;, &quot;+&quot;&quot;+CHR(39)+&quot;&quot;+ARG_I__PARAM_02+&quot;&quot;+CHR(39)+&quot;&quot;+&quot;, &quot;+&quot;&quot;+CHR(39)+&quot;&quot;+ARG_I__PARAM_03+&quot;&quot;+CHR(39)+&quot;, &quot;+&quot;&quot;+CHR(39)+&quot;&quot;+ARG_I__PARAM_04+&quot;&quot;+CHR(39)+&quot;&quot;]" TimeoutMS="55555" ConnectionString="Data Source=tasql3;Initial Catalog=InContact;Integrated Security=True">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <Assign DisplayName="ARG_O__QUERY_RESULT" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_66">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[ARG_O__QUERY_RESULT]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[ARG_O__DTBL__RESULT(0)(0).ToString]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+      <Sequence x:Key="sp__perceptive_wf_queue__insert" DisplayName="sp__perceptive_wf_queue__insert" sap:VirtualizedContainerService.HintSize="336,51" sap2010:WorkflowViewState.IdRef="Sequence_76">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[VAR_INTG__AFFECTED_RECORDS]" CommandType="Text" DisplayName="sp__perceptive_wf_queue__insert" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_10" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteNonQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteNonQuery.Parameters>
+        </ui:ExecuteNonQuery>
+      </Sequence>
+      <Sequence x:Key="sp__perceptive_api_call" DisplayName="sp__perceptive_api_call" sap:VirtualizedContainerService.HintSize="336,51" sap2010:WorkflowViewState.IdRef="Sequence_77">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[VAR_INTG__AFFECTED_RECORDS]" CommandType="Text" DisplayName="sp__perceptive_api_call" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_11" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteNonQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteNonQuery.Parameters>
+        </ui:ExecuteNonQuery>
+      </Sequence>
+      <Sequence x:Key="sp__perceptive_wf_queue__get" DisplayName="sp__perceptive_wf_queue__get" sap:VirtualizedContainerService.HintSize="336,212" sap2010:WorkflowViewState.IdRef="Sequence_78">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__perceptive_wf_queue__get" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_18" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+      </Sequence>
+      <Sequence x:Key="sp__bot_queue__insert" DisplayName="sp__bot_queue__insert" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="Sequence_79">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__bot_queue__insert" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="416,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_19" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,290" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="336,212" sap2010:WorkflowViewState.IdRef="Sequence_81">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExecuteNonQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" AffectedRecords="[VAR_INTG__AFFECTED_RECORDS]" CommandType="Text" DisplayName="sp__bot_queue__insert" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteNonQuery_12" Sql="[ARG_I__QUERY_TEXT]">
+                <ui:ExecuteNonQuery.Parameters>
+                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                </ui:ExecuteNonQuery.Parameters>
+              </ui:ExecuteNonQuery>
+            </Sequence>
+          </ui:CommentOut.Body>
+        </ui:CommentOut>
+      </Sequence>
+      <Sequence x:Key="sp__bot_queue__get" DisplayName="sp__bot_queue__get" sap:VirtualizedContainerService.HintSize="336,212" sap2010:WorkflowViewState.IdRef="Sequence_82">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__bot_queue__get" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_20" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+      </Sequence>
+      <Sequence x:Key="sp__file_import" DisplayName="sp__file_import" sap:VirtualizedContainerService.HintSize="336,51" sap2010:WorkflowViewState.IdRef="Sequence_83">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__file_import" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_21" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <Assign DisplayName="ARG_O__QUERY_RESULT" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_67">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[ARG_O__QUERY_RESULT]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">[ARG_O__DTBL__RESULT(0)(0).ToString]</InArgument>
+          </Assign.Value>
+        </Assign>
+      </Sequence>
+      <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" x:Key="sp__bot_queue__set" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__bot_queue__set" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="314,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_22" Sql="[ARG_I__QUERY_TEXT]">
+        <ui:ExecuteQuery.Parameters>
+          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+        </ui:ExecuteQuery.Parameters>
+      </ui:ExecuteQuery>
+      <Sequence x:Key="sp__any" DisplayName="sp__any" sap:VirtualizedContainerService.HintSize="486,457" sap2010:WorkflowViewState.IdRef="Sequence_84">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" CommandType="Text" DataTable="[ARG_O__DTBL__RESULT]" DisplayName="sp__any" ExistingDbConnection="[VAR_DBCN__RPA_HUB]" sap:VirtualizedContainerService.HintSize="464,88" sap2010:WorkflowViewState.IdRef="ExecuteQuery_23" Sql="[ARG_I__QUERY_TEXT]">
+          <ui:ExecuteQuery.Parameters>
+            <scg:Dictionary x:TypeArguments="x:String, Argument" />
+          </ui:ExecuteQuery.Parameters>
+        </ui:ExecuteQuery>
+        <If Condition="[0&lt;ARG_O__DTBL__RESULT.Rows.OfType(Of DataRow).Where(Function(r As DataRow) String.IsNullOrWhiteSpace(String.Concat(r.ItemArray).ToString) = False).Count]" DisplayName="ARG_O__QUERY_RESULT" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="If_35">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <If.Then>
+            <Assign DisplayName="ARG_O__QUERY_RESULT" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_68">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[ARG_O__QUERY_RESULT]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[ARG_O__DTBL__RESULT(0)(0).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </If.Then>
+        </If>
+      </Sequence>
+    </Switch>
+    <ui:LogMessage DisplayName="LOG__END" sap:VirtualizedContainerService.HintSize="476,91" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="Info" Message="[&quot;[END] ::: [DB_TRACKER] ::: [&quot;+ARG_I__DB_FUNCTION+&quot;]&quot;]" />
+  </Sequence>
+</Activity>

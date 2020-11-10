@@ -1,0 +1,1208 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ProcessTransaction" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:b="clr-namespace:BurntToastActivities;assembly=BurntToastActivities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_TransactionItem" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_TransactionCount" Type="InArgument(x:String)" />
+    <x:Property Name="in_UseProd" Type="InArgument(x:Boolean)" />
+    <x:Property Name="out_TransactionContent" Type="OutArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_RunArgs" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>3126,2501</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Microsoft.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>BurntToastActivities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualStudio.Services.Common</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Data.Entity</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>BurntToastActivities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="Description: In this file all other process specific files will be invoked. If an application exception occurs, the current transaction can be retried. If a BRE is thrown, the transaction will be skipped. Can be a flowchart or sequence. " DisplayName="ProcessTransaction" sap:VirtualizedContainerService.HintSize="625,2336" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="VAR_GUI__SUB_EXISTS" />
+      <Variable x:TypeArguments="ui:UiElement" Name="VAR_GUI__SUB_ELEMENT" />
+      <Variable x:TypeArguments="x:String" Name="VAR_GUI__SUB_NAME" />
+      <Variable x:TypeArguments="x:String" Name="VAR_GUI__SUB_TEXT_ENTRY" />
+      <Variable x:TypeArguments="x:String" Name="VAR_GUI__SUB_SELECTOR" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="StandardStuff" sap:VirtualizedContainerService.HintSize="583,66" sap2010:WorkflowViewState.IdRef="Sequence_537">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch DisplayName="out_TransactionContent" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch.Try>
+          <Sequence DisplayName="out_TransactionContent" sap:VirtualizedContainerService.HintSize="304,252" sap2010:WorkflowViewState.IdRef="Sequence_493">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="out_TransactionContent" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_51">
+              <Assign.To>
+                <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[out_TransactionContent]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new system.Collections.Generic.Dictionary(of string,object)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="outContent : i__field_key" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_414">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[out_TransactionContent(in_RunArgs("i__field_key").ToString)]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[in_TransactionItem(in_RunArgs("i__field_key").ToString).ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[exception.Message]" />
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+      <ui:ForEach x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" CurrentIndex="{x:Null}" DisplayName="log each property :)" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="ForEach`1_19" Values="[in_TransactionItem]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="scg:KeyValuePair(x:String, x:Object)">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="scg:KeyValuePair(x:String, x:Object)" Name="item" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_58" Level="Info" Message="[item.Key+&quot; == &quot;+item.Value.ToString]" />
+          </ActivityAction>
+        </ui:ForEach.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ForEach>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,183" sap2010:WorkflowViewState.IdRef="Sequence_536">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_59" Level="Warn" Message="[&quot;FINISHED WITH ITEM NUMBER &quot;+in_TransactionCount]" />
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+    </Sequence>
+    <Sequence DisplayName="START-MINING" sap:VirtualizedContainerService.HintSize="583,1295" sap2010:WorkflowViewState.IdRef="Sequence_547">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="582,158" sap2010:WorkflowViewState.IdRef="Sequence_558">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="UI--&quot;BFAST-GO-MINE&quot;" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_542">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_415">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">BFAST-GO-MINE</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_419">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="498,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_62" UnSafe="False" WorkflowFileName="XAML\SysGui_ImageClick_offset.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\BFAST__BTN_GO.PNG</InArgument>
+                  <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_X">0</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_Y">0</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="498,68" sap2010:WorkflowViewState.IdRef="Highlight_1">
+                <ui:Highlight.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Highlight.Target>
+              </ui:Highlight>
+              <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="498,715" sap2010:WorkflowViewState.IdRef="Sequence_541">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="456,623" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="418,396" sap2010:WorkflowViewState.IdRef="Sequence_540">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_416">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_539">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_63" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                            <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                            <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                            <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_62" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </Sequence>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_6">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="620,143" sap2010:WorkflowViewState.IdRef="Sequence_560">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch DisplayName="UI--&quot;BFAST-GO-MINE&quot;" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <Sequence DisplayName="UI--&quot;BFAST-GO-MINE&quot;" sap:VirtualizedContainerService.HintSize="540,1267" sap2010:WorkflowViewState.IdRef="Sequence_552">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_421">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">BFAST-GO-MINE</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_422">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="498,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_66" UnSafe="False" WorkflowFileName="XAML\SYS__GUI_IMAGE_CLICK.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\BFAST__BTN_GO.PNG</InArgument>
+                      <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="498,68" sap2010:WorkflowViewState.IdRef="Highlight_3">
+                    <ui:Highlight.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Highlight.Target>
+                  </ui:Highlight>
+                  <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="498,715" sap2010:WorkflowViewState.IdRef="Sequence_551">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="456,623" sap2010:WorkflowViewState.IdRef="TryCatch_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <TryCatch.Try>
+                        <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="418,396" sap2010:WorkflowViewState.IdRef="Sequence_550">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_423">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                            </Assign.Value>
+                          </Assign>
+                          <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_549">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_67" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                                <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                                <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                                <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                                <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                                <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                          </Sequence>
+                        </Sequence>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_4">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_64" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="544,21" sap2010:WorkflowViewState.IdRef="Catch`1_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <ui:LogMessage DisplayName="exception message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_66" Level="Warn" Message="[&quot;[ERR] ::: [&quot;+exception.Message+&quot;]&quot;]" />
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <TryCatch DisplayName="UI--&quot;BFAST-GO-POPUP--OK&quot;" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_13">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch.Try>
+          <Sequence DisplayName="UI--&quot;BFAST-GO-POPUP--OK&quot;" sap:VirtualizedContainerService.HintSize="376,709" sap2010:WorkflowViewState.IdRef="Sequence_577">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_434">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">BFAST-GO-POPUP--OK</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_435">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_9">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_573">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_78" UnSafe="False" WorkflowFileName="XAML\SysGui_ImageClick_offset.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\ADB__POPUP_OK.PNG</InArgument>
+                      <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_X">0</InArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_Y">0</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_79" UnSafe="False" WorkflowFileName="XAML\SYS__GUI_IMAGE_CLICK.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\ADB__POPUP_OK.PNG</InArgument>
+                <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_7">
+              <ui:Highlight.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Highlight.Target>
+            </ui:Highlight>
+            <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_576">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="456,623" sap2010:WorkflowViewState.IdRef="TryCatch_12">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="418,396" sap2010:WorkflowViewState.IdRef="Sequence_575">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_436">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_TEXT_ENTRY]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_574">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_80" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                          <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                          <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_TEXT_ENTRY]</InArgument>
+                          <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                          <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                    </Sequence>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_12">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_72" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+            </Sequence>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_13">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <ui:LogMessage DisplayName="exception message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_73" Level="Warn" Message="[&quot;[ERR] ::: [&quot;+exception.Message+&quot;]&quot;]" />
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+      <Sequence DisplayName="UI--&quot;BFAST-GO-MINE&quot;" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_564">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_427">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">BFAST-GO-MINE</InArgument>
+          </Assign.Value>
+        </Assign>
+        <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_428">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+          </Assign.Value>
+        </Assign>
+        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_71" UnSafe="False" WorkflowFileName="XAML\SYS__GUI_IMAGE_CLICK.xaml">
+          <ui:InvokeWorkflowFile.Arguments>
+            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\BFAST__BTN_GO.PNG</InArgument>
+            <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+          </ui:InvokeWorkflowFile.Arguments>
+        </ui:InvokeWorkflowFile>
+        <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_5">
+          <ui:Highlight.Target>
+            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+            </ui:Target>
+          </ui:Highlight.Target>
+        </ui:Highlight>
+        <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_562">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_429">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+            </Assign.Value>
+          </Assign>
+          <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_561">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_72" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </Sequence>
+        </Sequence>
+        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+          <ui:CommentOut.Body>
+            <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="522,471" sap2010:WorkflowViewState.IdRef="Sequence_567">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="480,385" sap2010:WorkflowViewState.IdRef="Sequence_563">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="438,293" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_566">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_430">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_565">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_73" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                            <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                            <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                            <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_68" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </Sequence>
+            </Sequence>
+          </ui:CommentOut.Body>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+        </ui:CommentOut>
+      </Sequence>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="582,158" sap2010:WorkflowViewState.IdRef="Sequence_557">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="UI--&quot;BFAST-GO-POPUP--OK&quot;" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_546">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_417">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">BFAST-GO-POPUP--OK</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="498,60" sap2010:WorkflowViewState.IdRef="Assign_420">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="498,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_64" UnSafe="False" WorkflowFileName="XAML\SysGui_ImageClick_offset.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                  <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\ADB__POPUP_OK.PNG</InArgument>
+                  <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_X">0</InArgument>
+                  <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_Y">0</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="498,68" sap2010:WorkflowViewState.IdRef="Highlight_2">
+                <ui:Highlight.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Highlight.Target>
+              </ui:Highlight>
+              <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="498,715" sap2010:WorkflowViewState.IdRef="Sequence_545">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="456,623" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <TryCatch.Try>
+                    <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="418,396" sap2010:WorkflowViewState.IdRef="Sequence_544">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_418">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_TEXT_ENTRY]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_543">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_65" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                          <ui:InvokeWorkflowFile.Arguments>
+                            <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                            <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                            <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_TEXT_ENTRY]</InArgument>
+                            <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                            <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                            <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                            <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                          </ui:InvokeWorkflowFile.Arguments>
+                        </ui:InvokeWorkflowFile>
+                      </Sequence>
+                    </Sequence>
+                  </TryCatch.Try>
+                  <TryCatch.Catches>
+                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_3">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ActivityAction x:TypeArguments="s:Exception">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                        </ActivityAction.Argument>
+                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_63" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                      </ActivityAction>
+                    </Catch>
+                  </TryCatch.Catches>
+                </TryCatch>
+              </Sequence>
+            </Sequence>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <TryCatch DisplayName="UI--&quot;BFAST-GO-POPUP--OK&quot;" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <TryCatch.Try>
+          <Sequence DisplayName="UI--&quot;BFAST-GO-POPUP--OK&quot;" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_556">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign DisplayName="VAR_GUI__SUB_NAME" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_424">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_NAME]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">BFAST-GO-POPUP--OK</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign DisplayName="VAR_GUI__SUB_SELECTOR" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_425">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_SELECTOR]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">&lt;wnd app='scrcpy.exe' cls='SDL_app' title='*' /&gt;</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_559">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_68" UnSafe="False" WorkflowFileName="XAML\SysGui_ImageClick_offset.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\ADB__POPUP_OK.PNG</InArgument>
+                      <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_X">0</InArgument>
+                      <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__OFFSET_Y">0</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </Sequence>
+              </ui:CommentOut.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:CommentOut>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Workflow File" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_69" UnSafe="False" WorkflowFileName="XAML\SYS__GUI_IMAGE_CLICK.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__UI_SELECTOR">[VAR_GUI__SUB_SELECTOR]</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ARG_I__IMG_PATH">.\Data\Dependencies\bot-vision\ADB__POPUP_OK.PNG</InArgument>
+                <OutArgument x:TypeArguments="ui:UiElement" x:Key="ARG_O__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:Highlight Color="33, 33, 33" ContinueOnError="True" HighlightTime="1111" sap:VirtualizedContainerService.HintSize="334,68" sap2010:WorkflowViewState.IdRef="Highlight_4">
+              <ui:Highlight.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[VAR_GUI__SUB_ELEMENT]" Id="16a6a959-fe49-492d-9df8-a07691f18f00" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </ui:Highlight.Target>
+            </ui:Highlight>
+            <Sequence DisplayName="[UI--&quot;BCH-Login---Enter-Referral&quot;]" sap:VirtualizedContainerService.HintSize="334,66" sap2010:WorkflowViewState.IdRef="Sequence_555">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="456,623" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="UI--CLICKTYPE" sap:VirtualizedContainerService.HintSize="418,396" sap2010:WorkflowViewState.IdRef="Sequence_554">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign DisplayName="VAR_GUI__SUB_TEXT_ENTRY" sap:VirtualizedContainerService.HintSize="376,60" sap2010:WorkflowViewState.IdRef="Assign_426">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[VAR_GUI__SUB_TEXT_ENTRY]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[string.Empty]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <Sequence DisplayName="CLICK ELEMENT" sap:VirtualizedContainerService.HintSize="376,204" sap2010:WorkflowViewState.IdRef="Sequence_553">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="SYS__GUI_CLICK_OR_TYPE" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_70" UnSafe="False" WorkflowFileName="XAML\SysGui_ClickOrType.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <OutArgument x:TypeArguments="x:String" x:Key="ARG_O__XCPT_MESSAGE" />
+                          <OutArgument x:TypeArguments="ui:BusinessRuleException" x:Key="ARG_O__XCPT_EXCEPTION" />
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__PROC_ID">[VAR_GUI__SUB_NAME]</InArgument>
+                          <InArgument x:TypeArguments="ui:UiElement" x:Key="ARG_I__UI_ELEMENT">[VAR_GUI__SUB_ELEMENT]</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_TYPE">[VAR_GUI__SUB_TEXT_ENTRY]</InArgument>
+                          <InArgument x:TypeArguments="x:Int32" x:Key="ARG_I__TIMEOUT">7777</InArgument>
+                          <OutArgument x:TypeArguments="x:Boolean" x:Key="ARG_O__EXISTS" />
+                          <InArgument x:TypeArguments="x:String" x:Key="ARG_I__TEXT_DIRTY">[string.Empty]</InArgument>
+                          <InArgument x:TypeArguments="x:Boolean" x:Key="ARG_I__WM_ACTION">True</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                    </Sequence>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="422,21" sap2010:WorkflowViewState.IdRef="Catch`1_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_65" Level="Error" Message="[&quot;[ERR] ::: [&quot;+VAR_GUI__SUB_NAME+&quot;]&quot;+&quot; ::: &quot;+&quot;&quot;+exception.Message]" />
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+              </TryCatch>
+            </Sequence>
+          </Sequence>
+        </TryCatch.Try>
+        <TryCatch.Catches>
+          <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ActivityAction x:TypeArguments="s:Exception">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+              </ActivityAction.Argument>
+              <ui:LogMessage DisplayName="exception message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_67" Level="Warn" Message="[&quot;[ERR] ::: [&quot;+exception.Message+&quot;]&quot;]" />
+            </ActivityAction>
+          </Catch>
+        </TryCatch.Catches>
+      </TryCatch>
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_28" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_29" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_41" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_42" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_43" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_44" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_45" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_46" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_47" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_48" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_51" />
+    </Sequence>
+    <Sequence DisplayName="GetBackToBFAST-Home" sap:VirtualizedContainerService.HintSize="583,66" sap2010:WorkflowViewState.IdRef="Sequence_548">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" ContinueOnError="True" DisplayName="ABD_CMD__BACK" FileName="[in_Config(&quot;BCBS_WorkingDir&quot;).ToString+&quot;\SYS\&quot;+&quot;HW_BTN__BACK.CMD&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_31" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_32" />
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" ContinueOnError="True" DisplayName="ABD_CMD__BACK" FileName="[in_Config(&quot;BCBS_WorkingDir&quot;).ToString+&quot;\SYS\&quot;+&quot;HW_BTN__BACK.CMD&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="StartProcess_5" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_33" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_49" />
+      <ui:StartProcess Arguments="{x:Null}" WorkingDirectory="{x:Null}" ContinueOnError="True" DisplayName="ABD_CMD__BACK" FileName="[in_Config(&quot;BCBS_WorkingDir&quot;).ToString+&quot;\SYS\&quot;+&quot;HW_BTN__BACK.CMD&quot;]" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="StartProcess_6" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_35" />
+      <Delay DisplayName="Delay--7sec" Duration="00:00:07" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_50" />
+    </Sequence>
+    <b:CreateNotification DisplayName="DONE" sap:VirtualizedContainerService.HintSize="583,22" IconPath="C:\TEMP\BOT.PNG" sap2010:WorkflowViewState.IdRef="CreateNotification_2" Text="DONE" />
+    <If Condition="[convert.toint32(in_TransactionCount ) mod 10 = 0]" sap:VirtualizedContainerService.HintSize="583,487" sap2010:WorkflowViewState.IdRef="If_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <TryCatch DisplayName="Try catch - TakeScreenshot" sap:VirtualizedContainerService.HintSize="438,339" sap2010:WorkflowViewState.IdRef="TryCatch_9">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <TryCatch.Try>
+            <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke TakeScreenshot workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_74" UnSafe="False" WorkflowFileName="Framework\TakeScreenshot.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="in_Folder">
+                  <Literal x:TypeArguments="x:String">C:\__KCKM\__RPA\__TEMP\__SS\</Literal>
+                </InArgument>
+                <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+          </TryCatch.Try>
+          <TryCatch.Catches>
+            <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ActivityAction x:TypeArguments="s:Exception">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                </ActivityAction.Argument>
+                <ui:LogMessage DisplayName="Log message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_69" Level="Warn" Message="[&quot;Take screenshot failed with error: &quot;+exception.Message+&quot; at Source: &quot;+exception.Source]" />
+              </ActivityAction>
+            </Catch>
+          </TryCatch.Catches>
+        </TryCatch>
+      </If.Then>
+    </If>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="583,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="376,282" sap2010:WorkflowViewState.IdRef="Sequence_535">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,59" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Go To Next??&quot;]" />
+          <ui:LogMessage DisplayName="Log transaction item" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Info" Message="[&quot;[out_TransactionContent] ::: [&quot;+newtonsoft.json.JsonConvert.SerializeObject(out_TransactionContent).ToString+&quot;]&quot;]" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>

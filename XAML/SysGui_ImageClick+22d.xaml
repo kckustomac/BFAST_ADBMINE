@@ -1,0 +1,295 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SYS__GUI_IMAGE_CLICK" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="ARG_I__PROC_ID" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__UI_SELECTOR" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_I__IMG_PATH" Type="InArgument(x:String)" />
+    <x:Property Name="ARG_O__UI_ELEMENT" Type="OutArgument(ui:UiElement)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>785,2768</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="check selector for image and click it using click image activity and output uielement in case other ui actions are necessary" DisplayName="SYS__GUI_IMAGE_CLICK" sap:VirtualizedContainerService.HintSize="745,2688" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:GenericValue" Name="ADB_UI__SCRAPE_OCR" />
+      <Variable x:TypeArguments="x:String" Name="ADB_UI__SCRAPE_TEXT" />
+      <Variable x:TypeArguments="x:String" Default="KC-BTC-4222" Name="ADB_HOST__NAME" />
+      <Variable x:TypeArguments="ui:Image" Name="ADB_UI__IMAGE_CHECK" />
+      <Variable x:TypeArguments="x:Boolean" Name="BOOL_EXISTS" />
+      <Variable x:TypeArguments="ui:UiElement" Name="ADB_UI__ELEMENT" />
+      <Variable x:TypeArguments="sd:Rectangle" Name="rectangle" />
+      <Variable x:TypeArguments="ui:Region" Name="region" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="LOG__BEG" sap:VirtualizedContainerService.HintSize="723,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;[BEG] ::: [SYS__GUI_IMAGE_CLICK]&quot;]" />
+    <If Condition="[string.IsNullOrEmpty(ARG_I__UI_SELECTOR) OR string.IsNullOrEmpty(ARG_I__UI_SELECTOR) OR string.IsNullOrEmpty(ARG_I__IMG_PATH)]" DisplayName="If--MISSING INPUT ARGUMENTS" sap:VirtualizedContainerService.HintSize="723,51" sap2010:WorkflowViewState.IdRef="If_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Throw DisplayName="MISSING INPUT ARGUMENTS" Exception="[new uipath.Core.BusinessRuleException(&quot;SYS__GUI_IMAGE_CLICK :: MISSING INPUT ARGUMENTS&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_2" />
+      </If.Then>
+    </If>
+    <If Condition="[system.IO.File.Exists(ARG_I__IMG_PATH)]" DisplayName="LOAD-IMAGE" sap:VirtualizedContainerService.HintSize="723,51" sap2010:WorkflowViewState.IdRef="If_5">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <ui:LoadImage DisplayName="Load Image" FileName="[ARG_I__IMG_PATH]" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="LoadImage_1" Image="[ADB_UI__IMAGE_CHECK]" />
+      </If.Then>
+      <If.Else>
+        <Throw DisplayName="IMAGE FILE NOT EXIST" Exception="[new uipath.Core.BusinessRuleException(&quot;&quot;+ARG_I__PROC_ID+&quot; : &quot;+&quot;IMAGE FILE NOT EXIST&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_3" />
+      </If.Else>
+    </If>
+    <Sequence DisplayName="image-clik" sap:VirtualizedContainerService.HintSize="723,2120" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ImageFound DisplayName="Image Exists" Found="[BOOL_EXISTS]" sap:VirtualizedContainerService.HintSize="701,68" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+        <ui:ImageFound.Image>
+          <ui:ImageTarget TargetImageBase64="{x:Null}" Accuracy="0.8" Image="[ADB_UI__IMAGE_CHECK]" />
+        </ui:ImageFound.Image>
+        <ui:ImageFound.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="[ARG_I__UI_SELECTOR]" TimeoutMS="7777" WaitForReady="INTERACTIVE" />
+        </ui:ImageFound.Target>
+      </ui:ImageFound>
+      <If Condition="[BOOL_EXISTS]" DisplayName="image found pass/fail msg" sap:VirtualizedContainerService.HintSize="701,239" sap2010:WorkflowViewState.IdRef="If_2">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;[&quot;+ARG_I__PROC_ID+&quot;] ::: [&quot;+&quot;PASS - image element found!&quot;+&quot;]&quot;]" />
+        </If.Then>
+        <If.Else>
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error" Message="[&quot;[&quot;+ARG_I__PROC_ID+&quot;] ::: [&quot;+&quot;FAIL - Unable to find image element&quot;+&quot;]&quot;]" />
+        </If.Else>
+      </If>
+      <If Condition="[BOOL_EXISTS]" DisplayName="If-img-found-click" sap:VirtualizedContainerService.HintSize="701,1609" sap2010:WorkflowViewState.IdRef="If_3">
+        <If.Then>
+          <Sequence sap:VirtualizedContainerService.HintSize="476,1461" sap2010:WorkflowViewState.IdRef="Sequence_12">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ElementScope DisplayName="Element Scope" sap:VirtualizedContainerService.HintSize="454,1229" sap2010:WorkflowViewState.IdRef="ElementScope_1" UiElement="[ARG_O__UI_ELEMENT]">
+              <ui:ElementScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="440,1121" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:WaitImageAppear ContinueOnError="True" DisplayName="Find Image" FoundElement="[ADB_UI__ELEMENT]" sap:VirtualizedContainerService.HintSize="418,68" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+                      <ui:WaitImageAppear.Image>
+                        <ui:ImageTarget TargetImageBase64="{x:Null}" Accuracy="0.8" Image="[ADB_UI__IMAGE_CHECK]" />
+                      </ui:WaitImageAppear.Image>
+                      <ui:WaitImageAppear.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                      </ui:WaitImageAppear.Target>
+                    </ui:WaitImageAppear>
+                    <ui:GetPosition ContinueOnError="{x:Null}" DisplayName="Get Position" sap:VirtualizedContainerService.HintSize="418,68" sap2010:WorkflowViewState.IdRef="GetPosition_1" Rectangle="[rectangle]">
+                      <ui:GetPosition.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Element="[ADB_UI__ELEMENT]" WaitForReady="INTERACTIVE" />
+                      </ui:GetPosition.Target>
+                    </ui:GetPosition>
+                    <Assign DisplayName="region" sap:VirtualizedContainerService.HintSize="418,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="ui:Region">[region]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="ui:Region">[New UiPath.Core.Region(New System.Drawing.Rectangle(rectangle.Left,rectangle.Right,rectangle.Top,rectangle.Bottom))]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:SetClippingRegion Size="{x:Null}" Direction="RECTANGLE" DisplayName="Set Clipping Region" Element="[ADB_UI__ELEMENT]" sap:VirtualizedContainerService.HintSize="418,22" sap2010:WorkflowViewState.IdRef="SetClippingRegion_1" Region="[region]" />
+                    <ui:Highlight Color="AppWorkspace" HighlightTime="333" sap:VirtualizedContainerService.HintSize="418,68" sap2010:WorkflowViewState.IdRef="Highlight_1">
+                      <ui:Highlight.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                      </ui:Highlight.Target>
+                    </ui:Highlight>
+                    <ui:Highlight Color="MenuHighlight" HighlightTime="333" sap:VirtualizedContainerService.HintSize="418,68" sap2010:WorkflowViewState.IdRef="Highlight_2">
+                      <ui:Highlight.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                      </ui:Highlight.Target>
+                    </ui:Highlight>
+                    <ui:Highlight Color="WindowFrame" HighlightTime="333" sap:VirtualizedContainerService.HintSize="418,68" sap2010:WorkflowViewState.IdRef="Highlight_3">
+                      <ui:Highlight.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                      </ui:Highlight.Target>
+                    </ui:Highlight>
+                    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="418,295" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                      <TryCatch.Try>
+                        <ui:ClickImage ContinueOnError="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="777" DelayMS="777" DisplayName="Click Image" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False">
+                          <ui:ClickImage.CursorPosition>
+                            <ui:CursorPosition OffsetX="{x:Null}" OffsetY="22" Position="Center" />
+                          </ui:ClickImage.CursorPosition>
+                          <ui:ClickImage.Image>
+                            <ui:ImageTarget TargetImageBase64="{x:Null}" Accuracy="0.8" Image="[ADB_UI__IMAGE_CHECK]" />
+                          </ui:ClickImage.Image>
+                          <ui:ClickImage.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Element="[ARG_O__UI_ELEMENT]" WaitForReady="INTERACTIVE" />
+                          </ui:ClickImage.Target>
+                        </ui:ClickImage>
+                      </TryCatch.Try>
+                      <TryCatch.Catches>
+                        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ActivityAction x:TypeArguments="s:Exception">
+                            <ActivityAction.Argument>
+                              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                            </ActivityAction.Argument>
+                            <Sequence sap:VirtualizedContainerService.HintSize="336,368" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,91" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Error" Message="[&quot;click image exception : &quot;+exception.Message]" />
+                              <ui:SetClippingRegion Size="{x:Null}" Direction="RECTANGLE" DisplayName="Set Clipping Region" Element="[ADB_UI__ELEMENT]" sap:VirtualizedContainerService.HintSize="416,22" sap2010:WorkflowViewState.IdRef="SetClippingRegion_2" Region="[region]" />
+                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+                                <ui:CommentOut.Body>
+                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="336,192" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="333" DelayMS="333" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                                      <ui:Click.CursorPosition>
+                                        <ui:CursorPosition Position="Center">
+                                          <ui:CursorPosition.OffsetX>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetX>
+                                          <ui:CursorPosition.OffsetY>
+                                            <InArgument x:TypeArguments="x:Int32" />
+                                          </ui:CursorPosition.OffsetY>
+                                        </ui:CursorPosition>
+                                      </ui:Click.CursorPosition>
+                                      <ui:Click.Target>
+                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
+                                      </ui:Click.Target>
+                                    </ui:Click>
+                                  </Sequence>
+                                </ui:CommentOut.Body>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </ui:CommentOut>
+                            </Sequence>
+                          </ActivityAction>
+                        </Catch>
+                      </TryCatch.Catches>
+                    </TryCatch>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ElementScope.Body>
+              <ui:ElementScope.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" Selector="[ARG_I__UI_SELECTOR]" WaitForReady="INTERACTIVE" />
+              </ui:ElementScope.Target>
+            </ui:ElementScope>
+            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="333" DelayMS="333" sap:VirtualizedContainerService.HintSize="454,68" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" Element="[ARG_O__UI_ELEMENT]" WaitForReady="INTERACTIVE" />
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Throw DisplayName="IMAGE NOT FOUND" Exception="[new uipath.Core.BusinessRuleException(&quot;&quot;+ARG_I__PROC_ID+&quot; : &quot;+&quot;IMAGE NOT FOUND IN SELECTOR&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_4" />
+        </If.Else>
+      </If>
+    </Sequence>
+    <ui:LogMessage DisplayName="LOG__END" sap:VirtualizedContainerService.HintSize="723,91" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;[END] ::: [SYS__GUI_IMAGE_CLICK]&quot;]" />
+  </Sequence>
+</Activity>

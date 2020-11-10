@@ -1,0 +1,372 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.i__TempLocalDir="C:\TEMP\ToastNotif" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:b="clr-namespace:BurntToastActivities;assembly=BurntToastActivities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/ftp" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:wz="clr-namespace:WindowsXT.Zip;assembly=WindowsXT" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="i__TempLocalDir" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>304,703</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ToastNotif" sap:VirtualizedContainerService.HintSize="264,623" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="SysEnv_UserName" />
+      <Variable x:TypeArguments="x:Boolean" Name="bool__exists" />
+      <Variable x:TypeArguments="x:String" Name="i__BT_DependenciesFilepath" />
+      <Variable x:TypeArguments="x:String" Name="temp__file_path" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign DisplayName="i__BT_DependenciesFilepath" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[i__BT_DependenciesFilepath]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">C:\TEMP\BOT_NOTIF</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Assign DisplayName="file__temp_path" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[temp__file_path]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">[i__BT_DependenciesFilepath]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <TryCatch DisplayName="burntToast-Install" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <Sequence DisplayName="burntToast-Install" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Download_BotNotif.zip" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:WithFtpSession ClientCertificatePassword="{x:Null}" ClientCertificatePath="{x:Null}" AcceptAllCertificates="True" ContinueOnError="False" DisplayName="FTP--TUIPATH01" sap:VirtualizedContainerService.HintSize="200,51" Host="waws-prod-dm1-131.ftp.azurewebsites.windows.net" sap2010:WorkflowViewState.IdRef="WithFtpSession_1" Password="sJeR8N1SXtrs5yRwiQ0xAowjrtRCyFDGd4y3SCMfC27Qx9Jst3n2uxZNyeGe" Port="21" Username="tuipath01-zjkllqgkhux52\$tuipath01-zjkllqgkhux52">
+              <p:WithFtpSession.Body>
+                <ActivityAction x:TypeArguments="p:IFtpSession">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="p:IFtpSession" Name="FtpSession" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,393" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <p:FileExists ContinueOnError="False" DisplayName="File exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,22" sap2010:WorkflowViewState.IdRef="FileExists_1" RemotePath="//data/dependencies/BlueBotNotif/BlueBotNotif.zip" />
+                    <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,207" sap2010:WorkflowViewState.IdRef="If_7">
+                      <If.Then>
+                        <p:DownloadFiles ContinueOnError="False" Create="True" DisplayName="Download files" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="DownloadFiles_1" LocalPath="[i__BT_DependenciesFilepath+&quot;.ZIP&quot;]" Overwrite="True" Recursive="False" RemotePath="//data/dependencies/BlueBotNotif/BlueBotNotif.zip" />
+                      </If.Then>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </p:WithFtpSession.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </p:WithFtpSession>
+            <Sequence DisplayName="Unpack--BlueBotNotif.zip" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_17">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="DeleteExistingTempDir" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:PathExists DisplayName="Path Exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,89" sap2010:WorkflowViewState.IdRef="PathExists_4" Path="[i__BT_DependenciesFilepath]" PathType="Folder" />
+                <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_8">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <ui:Delete ContinueOnError="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delete_3" Path="[i__BT_DependenciesFilepath]" />
+                  </If.Then>
+                </If>
+              </Sequence>
+              <If Condition="[system.IO.File.Exists(i__BT_DependenciesFilepath+&quot;.ZIP&quot;)]" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <wz:UnZip Password="{x:Null}" ArchiveFile="[i__BT_DependenciesFilepath+&quot;.ZIP&quot;]" DestinationDir="[i__BT_DependenciesFilepath]" DisplayName="UnZip -- BlueBotNotif" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UnZip_7" />
+                </If.Then>
+              </If>
+            </Sequence>
+            <Sequence DisplayName="Reassign_SourcePath" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:PathExists DisplayName="Path Exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,89" sap2010:WorkflowViewState.IdRef="PathExists_5" Path="[i__BT_DependenciesFilepath+&quot;\BlueBotNotif\&quot;]" PathType="Folder" />
+              <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <Assign DisplayName="i__BT_DependenciesFilepath" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[i__BT_DependenciesFilepath]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[i__BT_DependenciesFilepath+"\BlueBotNotif\"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </If.Then>
+              </If>
+            </Sequence>
+          </Sequence>
+          <Sequence DisplayName="FileSys-Prerequisites" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetEnvironmentVariable DisplayName="Get environment variable" sap:VirtualizedContainerService.HintSize="314,59" sap2010:WorkflowViewState.IdRef="GetEnvironmentVariable_2" Variable="UserName" VariableValue="[SysEnv_UserName]" />
+            <ui:CreateDirectory ContinueOnError="True" DisplayName="Create Directory" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[i__TempLocalDir]" />
+            <ui:CreateDirectory ContinueOnError="True" DisplayName="Create Directory" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CreateDirectory_1" Path="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell&quot;]" />
+            <ui:CreateDirectory ContinueOnError="True" DisplayName="Create Directory" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell\modules&quot;]" />
+            <ui:CreateDirectory ContinueOnError="True" DisplayName="Create Directory" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell\modules&quot;]" />
+          </Sequence>
+          <Sequence DisplayName="COPY_DEPENDENCIES" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CopyFile ContinueOnError="True" Destination="[&quot;C:\TEMP\&quot;+&quot;BOT.PNG&quot;]" DisplayName="C:\TEMP\BOT.PNG" sap:VirtualizedContainerService.HintSize="352,22" sap2010:WorkflowViewState.IdRef="CopyFile_5" Overwrite="True" Path="[i__BT_DependenciesFilepath+&quot;BOT_BCBSKC.PNG&quot;]" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="copyBin" sap:VirtualizedContainerService.HintSize="352,411" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[system.IO.Directory.GetFiles(i__BT_DependenciesFilepath)]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="file" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="336,277" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Trace" Message="[&quot;copied file = &quot;+i__TempLocalDir+&quot;\&quot;+(file.ToString.Substring((file.ToString.LastIndexOf(chr(92)) + 1),((file.ToString.Length) - ((file.ToString.LastIndexOf(chr(92))+1)))))]" />
+                    <ui:CopyFile ContinueOnError="True" Destination="[i__TempLocalDir+&quot;\&quot;+(file.ToString.Substring((file.ToString.LastIndexOf(chr(92)) + 1),((file.ToString.Length) - ((file.ToString.LastIndexOf(chr(92))+1)))))]" DisplayName="CopySysBinaries" sap:VirtualizedContainerService.HintSize="314,22" sap2010:WorkflowViewState.IdRef="CopyFile_6" Overwrite="True" Path="[file.ToString]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:ForEach>
+            <ui:CopyFile ContinueOnError="True" Destination="C:\Program Files (x86)\BurntToast\BurntToast.png" DisplayName="&quot;C:\Program Files (x86)\BurntToast\BurntToast.png&quot;" sap:VirtualizedContainerService.HintSize="352,22" sap2010:WorkflowViewState.IdRef="CopyFile_7" Overwrite="True" Path="[&quot;C:\TEMP\&quot;+&quot;BOT.PNG&quot;]" />
+          </Sequence>
+          <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[i__BT_DependenciesFilepath+&quot;ps_cfg.cmd&quot;]" ContinueOnError="True" DisplayName="SetExecutionPolicy" FileName="START /MIN" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="StartProcess_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:StartProcess>
+          <Sequence DisplayName="Unpack+Install" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Unzip--UserDocuments-Powershell" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:PathExists DisplayName="Path Exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,89" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell\modules&quot;]" PathType="Folder" />
+              <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_1">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <If.Then>
+                  <ui:Delete ContinueOnError="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delete_1" Path="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell\modules\BurntToast&quot;]" />
+                </If.Then>
+              </If>
+              <wz:UnZip Password="{x:Null}" ArchiveFile="[i__TempLocalDir+&quot;\&quot;+&quot;BurntToast.zip&quot;]" DestinationDir="[&quot;C:\USERS\&quot;+SysEnv_UserName+&quot;\Documents\WindowsPowerShell\modules\BurntToast&quot;]" DisplayName="UnZip -- BurntToast.zip" sap:VirtualizedContainerService.HintSize="464,22" sap2010:WorkflowViewState.IdRef="UnZip_1" />
+            </Sequence>
+            <Sequence DisplayName="UnZipProgramFiles" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:PathExists DisplayName="Path Exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,89" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="C:\Program Files\WindowsPowerShell\Modules" PathType="Folder" />
+              <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,356" sap2010:WorkflowViewState.IdRef="If_2">
+                <If.Then>
+                  <Sequence sap:VirtualizedContainerService.HintSize="222,208" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:Delete ContinueOnError="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delete_2" Path="C:\Program Files\WindowsPowerShell\Modules\BurntToast\" />
+                    <wz:UnZip Password="{x:Null}" ArchiveFile="[i__TempLocalDir+&quot;\&quot;+&quot;BurntToast.zip&quot;]" DestinationDir="C:\Program Files\WindowsPowerShell\Modules\BurntToast" DisplayName="UnZip -- BurntToast.zip" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UnZip_4" />
+                  </Sequence>
+                </If.Then>
+                <If.Else>
+                  <wz:UnZip Password="{x:Null}" ArchiveFile="[i__TempLocalDir+&quot;\&quot;+&quot;BurntToast.zip&quot;]" DestinationDir="C:\Program Files\WindowsPowerShell\Modules\BurntToast" DisplayName="UnZip -- BurntToast.zip" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UnZip_6" />
+                </If.Else>
+              </If>
+            </Sequence>
+            <Sequence DisplayName="UnZip--Sys32-PS-Modules" sap:VirtualizedContainerService.HintSize="464,51" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:PathExists DisplayName="Path Exists" Exists="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,89" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="C:\Windows\system32\WindowsPowerShell\v1.0\Modules" PathType="Folder" />
+              <If Condition="[bool__exists]" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_5">
+                <If.Then>
+                  <wz:UnZip Password="{x:Null}" ArchiveFile="[i__TempLocalDir+&quot;\&quot;+&quot;BurntToast.zip&quot;]" DestinationDir="C:\Windows\system32\WindowsPowerShell\v1.0\Modules\BurntToast" DisplayName="UnZip -- BurntToast.zip" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="UnZip_5" />
+                </If.Then>
+              </If>
+            </Sequence>
+            <If Condition="[system.IO.File.Exists(&quot;C:\Program Files (x86)\BurntToast\BurntToast.png&quot;)]" sap:VirtualizedContainerService.HintSize="464,235" sap2010:WorkflowViewState.IdRef="If_4">
+              <If.Else>
+                <ui:StartProcess WorkingDirectory="{x:Null}" Arguments="[&quot;/q /i &quot;+i__TempLocalDir+&quot;\&quot;+&quot;BurntToast.msi&quot;]" DisplayName="Start Process" FileName="C:\Windows\System32\msiexec.exe" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="StartProcess_1" />
+              </If.Else>
+            </If>
+            <ui:CopyFile ContinueOnError="True" Destination="C:\Program Files (x86)\BurntToast\BurntToast.png" DisplayName="&quot;C:\Program Files (x86)\BurntToast\BurntToast.png&quot;" sap:VirtualizedContainerService.HintSize="464,22" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[&quot;C:\TEMP\&quot;+&quot;BOT.PNG&quot;]" />
+          </Sequence>
+          <If Condition="[system.IO.File.Exists(&quot;C:\Temp\BOT.PNG&quot;)]" DisplayName="&quot;BlueBotNotif Dependencies Missing!&quot;" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If.Then>
+              <ui:RunPowerShellScript x:TypeArguments="x:Object" Output="{x:Null}" DisplayName="Run power shell script" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="RunPowerShellScript`1_1" ScriptPath="[i__BT_DependenciesFilepath+&quot;Install-BT--bluekc.ps1&quot;]" />
+            </If.Then>
+            <If.Else>
+              <Throw DisplayName="Throw--BlueBotNotif" Exception="[new uipath.Core.BusinessRuleException(&quot;BlueBotNotif Dependencies Missing!&quot;)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+            </If.Else>
+          </If>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Warn" Message="[&quot;[BurntToast InstallError] : &quot;+exception.Message]" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+    </TryCatch>
+    <ui:Delete ContinueOnError="True" DisplayName="DEL -- temp__file_path" sap:VirtualizedContainerService.HintSize="242,22" sap2010:WorkflowViewState.IdRef="Delete_6" Path="[temp__file_path]" />
+    <ui:Delete ContinueOnError="True" DisplayName="DEL -- temp__file_path.ZIP" sap:VirtualizedContainerService.HintSize="242,22" sap2010:WorkflowViewState.IdRef="Delete_5" Path="[temp__file_path+&quot;.ZIP&quot;]" />
+    <b:CreateNotification DisplayName="Create notification" sap:VirtualizedContainerService.HintSize="242,22" IconPath="C:\TEMP\BOT.PNG" sap2010:WorkflowViewState.IdRef="CreateNotification_1" Text="[&quot;BlueKC Bot&quot;+environment.NewLine+&quot;Loading Work Items...&quot;]" />
+    <ui:Delete ContinueOnError="True" DisplayName="DEL -- temp__file_path.ZIP" sap:VirtualizedContainerService.HintSize="242,22" sap2010:WorkflowViewState.IdRef="Delete_7" Path="[temp__file_path+&quot;.ZIP&quot;]" />
+  </Sequence>
+</Activity>

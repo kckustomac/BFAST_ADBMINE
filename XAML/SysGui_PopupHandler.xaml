@@ -1,0 +1,755 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SysGui_PopupHandler" this:SysGui_PopupHandler.i__ParentAppProperty="ceraexe0.exe" this:SysGui_PopupHandler.i__ExceptionPopupText="Open Failed!" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:swf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="i__ParentAppProperty" Type="InArgument(x:String)" />
+    <x:Property Name="i__ExceptionPopupText" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>836,2679</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>POPUP_OK_YES_CANCEL_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Java.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Cryptography</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="SysGui_PopupHandler" sap:VirtualizedContainerService.HintSize="796,2599" sap2010:WorkflowViewState.IdRef="Sequence_13">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="bool__popupExists" />
+      <Variable x:TypeArguments="x:String" Name="VAR_POPUP_TEXT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="774,93" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Must specify caller/parent app&#xA;i__ParentAppProperty&#xA;if unknown - use a star *&#xA;" />
+    <Sequence DisplayName="POPUP_OK_YES_CANCEL" sap:VirtualizedContainerService.HintSize="774,2251" sap2010:WorkflowViewState.IdRef="Sequence_66">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:Comment sap:VirtualizedContainerService.HintSize="752,55" sap2010:WorkflowViewState.IdRef="Comment_4" Text="OK - YES - CANCEL&#xA;" />
+      <ui:UiElementExists DisplayName="PopupExist" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="752,106" sap2010:WorkflowViewState.IdRef="UiElementExists_25">
+        <ui:UiElementExists.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f851c5e67ab5f9d7b07f66aa7489cbe3" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&quot;]" TimeoutMS="1234" WaitForReady="INTERACTIVE" />
+        </ui:UiElementExists.Target>
+      </ui:UiElementExists>
+      <If Condition="[bool__popupExists]" DisplayName="IF--PopupExist" sap:VirtualizedContainerService.HintSize="752,1886" sap2010:WorkflowViewState.IdRef="If_28">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <If.Then>
+          <Sequence DisplayName="UI_ACTION" sap:VirtualizedContainerService.HintSize="627,1738" sap2010:WorkflowViewState.IdRef="Sequence_65">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Log Popup Text" sap:VirtualizedContainerService.HintSize="605,51" sap2010:WorkflowViewState.IdRef="Sequence_68">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:GetValue ContinueOnError="True" DisplayName="Get Text 'Static'" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                <ui:GetValue.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;ctrl name='*' role='text' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                </ui:GetValue.Target>
+                <ui:GetValue.Value>
+                  <OutArgument x:TypeArguments="x:String">[VAR_POPUP_TEXT]</OutArgument>
+                </ui:GetValue.Value>
+              </ui:GetValue>
+              <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[&quot;[&quot;+DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;)+&quot;]&quot;]" />
+              <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_2" Text="[VAR_POPUP_TEXT]" />
+              <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_3">
+                <ui:AppendLine.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:AppendLine.Text>
+              </ui:AppendLine>
+            </Sequence>
+            <If Condition="[i__ExceptionPopupText isnot nothing]" DisplayName="If--Exception-Facets-Popup-Text" sap:VirtualizedContainerService.HintSize="605,51" sap2010:WorkflowViewState.IdRef="If_35">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <If Condition="[not string.IsNullOrEmpty(i__ExceptionPopupText)]" DisplayName="If--Exception-Facets-Popup-Text" sap:VirtualizedContainerService.HintSize="589,356" sap2010:WorkflowViewState.IdRef="If_34">
+                  <If.Then>
+                    <If Condition="[VAR_POPUP_TEXT.Contains(&quot;&quot;+i__ExceptionPopupText+&quot;&quot;)]" DisplayName="If--Exception-Facets-Popup-Text" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_33">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <Throw DisplayName="Throw--Facets Popup Exception" Exception="[new uipath.Core.BusinessRuleException(&quot;Facets Popup : &quot;+&quot;&quot;+VAR_POPUP_TEXT)]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Throw_1" />
+                      </If.Then>
+                    </If>
+                  </If.Then>
+                </If>
+              </If.Then>
+            </If>
+            <Sequence DisplayName="OkYesCancel" sap:VirtualizedContainerService.HintSize="605,1432" sap2010:WorkflowViewState.IdRef="Sequence_69">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="POPUP__OK" sap:VirtualizedContainerService.HintSize="583,1217" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:UiElementExists DisplayName="OK Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_26">
+                  <ui:UiElementExists.Target>
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                  </ui:UiElementExists.Target>
+                </ui:UiElementExists>
+                <If Condition="[bool__popupExists]" DisplayName="If the OK Button Exists, Click It" sap:VirtualizedContainerService.HintSize="561,947" sap2010:WorkflowViewState.IdRef="If_27">
+                  <If.Then>
+                    <Sequence DisplayName="Click OK and Log Click" sap:VirtualizedContainerService.HintSize="336,799" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="variable1" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_26" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_29" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_36" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_37" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                      <ui:LogMessage DisplayName="Log &quot;Killing Popups- OK&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - OK&quot;]" />
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="POPUP__YES" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:UiElementExists DisplayName="YES Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_27">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <If Condition="[bool__popupExists]" DisplayName="If the YES Button Exists, Click It" sap:VirtualizedContainerService.HintSize="561,509" sap2010:WorkflowViewState.IdRef="If_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Click YES and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click YES" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_27" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:LogMessage DisplayName="Log &quot;Killing Popups - YES&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_15" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - YES&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="POPUP__CANCEL" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:UiElementExists DisplayName="CANCEL Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_28">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If Condition="[bool__popupExists]" DisplayName="If the CANCEL Button Exists, Click It" sap:VirtualizedContainerService.HintSize="464,509" sap2010:WorkflowViewState.IdRef="If_25">
+                              <If.Then>
+                                <Sequence DisplayName="Click CANCEL and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click CANCEL" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_28" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                                    <ui:Click.CursorPosition>
+                                      <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                                    </ui:Click.CursorPosition>
+                                    <ui:Click.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                    </ui:Click.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Click>
+                                  <ui:LogMessage DisplayName="Log &quot;Killing Popups - CANCEL&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - CANCEL&quot;]" />
+                                </Sequence>
+                              </If.Then>
+                            </If>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </Sequence>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="583,51" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="222,175" sap2010:WorkflowViewState.IdRef="Sequence_87">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="POPUP__OK" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:UiElementExists DisplayName="OK Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_33">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <If Condition="[bool__popupExists]" DisplayName="If the OK Button Exists, Click It" sap:VirtualizedContainerService.HintSize="561,1119" sap2010:WorkflowViewState.IdRef="If_38">
+                        <If.Then>
+                          <Sequence DisplayName="Click OK and Log Click" sap:VirtualizedContainerService.HintSize="336,971" sap2010:WorkflowViewState.IdRef="Sequence_81">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="variable1" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_39" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_40" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_41" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="&lt;wnd app='*' cls='#32770' title='*' /&gt;&lt;wnd aaname='*O*K*' cls='Button' /&gt;&lt;ctrl role='push button' text='*O*K*' /&gt;" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <InvokeMethod DisplayName="Sendkeys__enter" sap:VirtualizedContainerService.HintSize="314,132" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="SendWait" TargetType="swf:SendKeys">
+                              <InArgument x:TypeArguments="x:String">{ENTER}</InArgument>
+                            </InvokeMethod>
+                            <ui:LogMessage DisplayName="Log &quot;Killing Popups- OK&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - OK&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="POPUP__YES" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_85">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:UiElementExists DisplayName="YES Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_34">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If Condition="[bool__popupExists]" DisplayName="If the YES Button Exists, Click It" sap:VirtualizedContainerService.HintSize="561,509" sap2010:WorkflowViewState.IdRef="If_37">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Click YES and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click YES" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_42" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                                    <ui:Click.CursorPosition>
+                                      <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                                    </ui:Click.CursorPosition>
+                                    <ui:Click.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                    </ui:Click.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Click>
+                                  <ui:LogMessage DisplayName="Log &quot;Killing Popups - YES&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - YES&quot;]" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="POPUP__CANCEL" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_84">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:UiElementExists DisplayName="CANCEL Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_35">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <If Condition="[bool__popupExists]" DisplayName="If the CANCEL Button Exists, Click It" sap:VirtualizedContainerService.HintSize="464,509" sap2010:WorkflowViewState.IdRef="If_36">
+                                    <If.Then>
+                                      <Sequence DisplayName="Click CANCEL and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_83">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click CANCEL" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_43" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                          </ui:Click.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:Click>
+                                        <ui:LogMessage DisplayName="Log &quot;Killing Popups - CANCEL&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - CANCEL&quot;]" />
+                                      </Sequence>
+                                    </If.Then>
+                                  </If>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+            </Sequence>
+          </Sequence>
+        </If.Then>
+      </If>
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="774,51" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="699,175" sap2010:WorkflowViewState.IdRef="Sequence_80">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="POPUP_OK_YES_CANCEL" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_79">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:Comment sap:VirtualizedContainerService.HintSize="655,55" sap2010:WorkflowViewState.IdRef="Comment_5" Text="OK - YES - CANCEL&#xA;" />
+            <ui:UiElementExists DisplayName="PopupExist" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="655,106" sap2010:WorkflowViewState.IdRef="UiElementExists_29">
+              <ui:UiElementExists.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="f851c5e67ab5f9d7b07f66aa7489cbe3" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&quot;]" TimeoutMS="1234" WaitForReady="INTERACTIVE" />
+              </ui:UiElementExists.Target>
+            </ui:UiElementExists>
+            <If Condition="[bool__popupExists]" DisplayName="IF--PopupExist" sap:VirtualizedContainerService.HintSize="655,1487" sap2010:WorkflowViewState.IdRef="If_32">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="UI_ACTION" sap:VirtualizedContainerService.HintSize="530,1339" sap2010:WorkflowViewState.IdRef="Sequence_78">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Log Popup Text" sap:VirtualizedContainerService.HintSize="508,573" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:GetValue ContinueOnError="True" DisplayName="Get Text 'Static'" sap:VirtualizedContainerService.HintSize="314,68" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                      <ui:GetValue.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd ctrlid='65535' title='*' aaname='*' cls='Static' /&gt;&lt;ctrl name='*' role='text' text='*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                      </ui:GetValue.Target>
+                      <ui:GetValue.Value>
+                        <OutArgument x:TypeArguments="x:String">[VAR_POPUP_TEXT]</OutArgument>
+                      </ui:GetValue.Value>
+                    </ui:GetValue>
+                    <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_4" Text="[&quot;[&quot;+DateTime.Now.ToString(&quot;yyyyMMdd_HHmmss&quot;)+&quot;]&quot;]" />
+                    <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_5" Text="[VAR_POPUP_TEXT]" />
+                    <ui:AppendLine DisplayName="Append line" FileName="C:\Temp\FacetsPopups.log" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="AppendLine_6">
+                      <ui:AppendLine.Text>
+                        <InArgument x:TypeArguments="x:String">
+                          <Literal x:TypeArguments="x:String" Value="" />
+                        </InArgument>
+                      </ui:AppendLine.Text>
+                    </ui:AppendLine>
+                  </Sequence>
+                  <Sequence DisplayName="OkYesCancel" sap:VirtualizedContainerService.HintSize="508,602" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="POPUP__OK" sap:VirtualizedContainerService.HintSize="486,478" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:UiElementExists DisplayName="OK Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_30">
+                        <ui:UiElementExists.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*OK*' aaname='*OK*' cls='Button' /&gt;&lt;ctrl name='*OK*' role='push button' text='*OK*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                        </ui:UiElementExists.Target>
+                      </ui:UiElementExists>
+                      <If Condition="[bool__popupExists]" DisplayName="If the OK Button Exists, Click It" sap:VirtualizedContainerService.HintSize="464,208" sap2010:WorkflowViewState.IdRef="If_31">
+                        <If.Then>
+                          <Sequence DisplayName="Click OK and Log Click" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="variable1" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_30" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*OK*' aaname='*OK*' cls='Button' /&gt;&lt;ctrl name='*OK*' role='push button' text='*OK*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click OK" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_31" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*OK*' aaname='*OK*' cls='Button' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <ui:LogMessage DisplayName="Log &quot;Killing Popups- OK&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - OK&quot;]" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="POPUP__YES" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:UiElementExists DisplayName="YES Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="561,106" sap2010:WorkflowViewState.IdRef="UiElementExists_31">
+                              <ui:UiElementExists.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                              </ui:UiElementExists.Target>
+                            </ui:UiElementExists>
+                            <If Condition="[bool__popupExists]" DisplayName="If the YES Button Exists, Click It" sap:VirtualizedContainerService.HintSize="561,509" sap2010:WorkflowViewState.IdRef="If_30">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <If.Then>
+                                <Sequence DisplayName="Click YES and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click YES" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                                    <ui:Click.CursorPosition>
+                                      <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                                    </ui:Click.CursorPosition>
+                                    <ui:Click.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Yes*' aaname='*Yes*' cls='Button' /&gt;&lt;ctrl name='*Yes*' role='push button' text='*Yes*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                    </ui:Click.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:Click>
+                                  <ui:LogMessage DisplayName="Log &quot;Killing Popups - YES&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_18" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - YES&quot;]" />
+                                </Sequence>
+                              </If.Then>
+                              <If.Else>
+                                <Sequence DisplayName="POPUP__CANCEL" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_74">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:UiElementExists DisplayName="CANCEL Button Exists?" Exists="[bool__popupExists]" sap:VirtualizedContainerService.HintSize="464,106" sap2010:WorkflowViewState.IdRef="UiElementExists_32">
+                                    <ui:UiElementExists.Target>
+                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="7f62d470ccb5322fcadd3406783f1ea4" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                    </ui:UiElementExists.Target>
+                                  </ui:UiElementExists>
+                                  <If Condition="[bool__popupExists]" DisplayName="If the CANCEL Button Exists, Click It" sap:VirtualizedContainerService.HintSize="464,509" sap2010:WorkflowViewState.IdRef="If_29">
+                                    <If.Then>
+                                      <Sequence DisplayName="Click CANCEL and Log Click" sap:VirtualizedContainerService.HintSize="336,361" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:Click ClickType="CLICK_SINGLE" ContinueOnError="True" DelayBefore="22" DelayMS="22" DisplayName="Click CANCEL" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="True" SimulateClick="False">
+                                          <ui:Click.CursorPosition>
+                                            <ui:CursorPosition OffsetX="{x:Null}" OffsetY="{x:Null}" Position="Center" />
+                                          </ui:Click.CursorPosition>
+                                          <ui:Click.Target>
+                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="ec95667d94e647256c5342c141c56e6e" Selector="[&quot;&lt;wnd app='*&quot;+&quot;&quot;+i__ParentAppProperty+&quot;&quot;+&quot;*' cls='#32770' title='*' /&gt;&lt;wnd title='*Cancel*' aaname='*Cancel*' cls='Button' /&gt;&lt;ctrl name='*Cancel*' role='push button' text='*Cancel*' /&gt;&quot;]" TimeoutMS="100" WaitForReady="INTERACTIVE" />
+                                          </ui:Click.Target>
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:Click>
+                                        <ui:LogMessage DisplayName="Log &quot;Killing Popups - CANCEL&quot;" sap:VirtualizedContainerService.HintSize="314,91" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="Warn" Message="[&quot;[MSG] ::: Killing Popups - CANCEL&quot;]" />
+                                      </Sequence>
+                                    </If.Then>
+                                  </If>
+                                </Sequence>
+                              </If.Else>
+                            </If>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </Sequence>
+                  </Sequence>
+                </Sequence>
+              </If.Then>
+            </If>
+          </Sequence>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+  </Sequence>
+</Activity>
