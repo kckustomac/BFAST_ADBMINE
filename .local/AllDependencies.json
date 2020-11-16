@@ -8100,9 +8100,9 @@
     "restore": {
       "projectUniqueName": "BFAST_ADBMINE",
       "projectName": "BFAST_ADBMINE",
-      "projectPath": "C:\\__KCKM\\__RPA\\__PROJECTS\\BFAST_ADBMINE\\BFAST_ADBMINE__201109\\.local",
+      "projectPath": "C:\\Users\\kckustomac\\Documents\\UiPath\\BFAST_ADBMINE\\.local",
       "packagesPath": "C:\\Users\\kckustomac\\.nuget\\packages\\",
-      "outputPath": "C:\\__KCKM\\__RPA\\__PROJECTS\\BFAST_ADBMINE\\BFAST_ADBMINE__201109\\.local"
+      "outputPath": "C:\\Users\\kckustomac\\Documents\\UiPath\\BFAST_ADBMINE\\.local"
     },
     "frameworks": {
       "net461": {
